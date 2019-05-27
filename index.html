@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tariq Hirji</title>
-        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Shojumaru|VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Share+Tech+Mono|VT323&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
 
     <body>
-
         <!-- NAVBAR SECTION -->
         <!-- Next steps: fixed, changes colours as it reaches different bg colours! -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -41,6 +40,35 @@
         <!-- GREETING Section -->
         <div class="jumbotron-fluid">
             <h3>Hello <span id="changling">World</span>, I'm Tariq Hirji.</h3>
+        </div>
+
+        <!-- fluid container to take up the rest of the landing -->
+        <!-- LEFT = Picture of myself, RIGHT = intro blurb w/ button -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Takes up whole viewpoint (vp) on small devices, half on medium + -->
+                <!-- LEFT, image -->
+                <div class="col-sm-12 col-md-6">
+                    <img src="img/me.jpg" alt="Tariq" class="img-responsive" id="me"/>
+                </div>
+
+                <!-- RIGHT, blurb w/ button -->
+                <div class="col-sm-12 col-md-6" id="blurb">
+                    <p>I am a student developer at the University of Western Ontario who is currently
+                        working towards an honours specialization in computer science.  
+                    </p>
+
+                    <p>
+                        In my first year of university, i discovered my passion for programming
+                        and immediately found many ideas of ways to apply it. Over the course of being at university, 
+                        some interests I've developed include web design, computer graphics, game development and artificial intelligence. 
+                    </p>
+
+                    <h5>Think we'd work well together?</h5>
+                    <button type="button" class="btn btn-primary" id="landingbtn">Contact me</button>
+                </div>
+            </div>
         </div>
 
 
