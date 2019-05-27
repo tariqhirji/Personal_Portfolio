@@ -11,17 +11,19 @@
 }
 
 .navbar-brand {
-    color: blue !important;
+    color: #87CEFA !important;
     font-family: 'Share Tech Mono', monospace !important;
     font-size: 25px !important;
+    font-weight: 300 !important;
 }
 
 .nav-link {
     font-family: 'Share Tech Mono', monospace !important;
     text-transform: uppercase !important;
-    color: blue !important;
+    color: #87CEFA !important;
     margin-right: 20px !important;
     font-size: 20px !important;
+    font-weight: 300 !important;
 }
 
 body {
@@ -32,7 +34,7 @@ body {
     width: 100vw !important;
     color: white !important;
     opacity: 0.87 !important;
-    background-image: linear-gradient(to right, #686166, #635d60, #5e595b, #595656, #535252) !important;
+    background-image: linear-gradient(to right, #484848, #555555, #636363, #717171, #808080);
     font-family: 'VT323', monospace !important;
     height: 150px !important;
     line-height: 150px !important;
