@@ -80,3 +80,11 @@ body {
     padding-top: 100px !important;
     padding-left: 30px !important;
 }
+
+#blurb h5 {
+    margin-top: 35px !important;
+}
+
+#landingbtn {
+    margin-top: 5px !important;
+}
