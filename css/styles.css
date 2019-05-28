@@ -14,7 +14,6 @@
 .navbar-brand {
     color: #ffffff !important;
     font-family: 'Share Tech Mono', monospace !important;
-    /* font-family: 'Calligraffitti', cursive !important; */
     font-size: 35px !important;
     font-weight: 300 !important;
     padding-left: 20px !important;
@@ -90,4 +89,19 @@ body {
     margin-top: 5px !important;
     padding: 6px 10px !important;
     margin-bottom: 30px !important;
+}
+
+/* Skills Section */
+
+#skills {
+    /* background-image: url(/img/skillsbg.jpg) !important; */
+    /* opacity: 0 !important;; */
+}
+/* Reuse class for all section  headers */
+.section-title {
+    font-family: 'Share Tech Mono', monospace !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
 }
