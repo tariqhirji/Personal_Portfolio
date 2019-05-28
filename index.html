@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tariq Hirji</title>
-        <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Share+Tech+Mono|VT323&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-    </head>
 
-    <body>
-        <!-- NAVBAR SECTION -->
-        <!-- Next steps: changes colours as it reaches different bg colours! -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Tariq Hirji</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Dropdown menu for smaller screens -->
-            <div class="collapse navbar-collapse" id="navigation">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tariq Hirji</title>
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Share+Tech+Mono|VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
 
-        <!-- LANDING Section -->
-        <section id="landing">
-            <div class="jumbotron-fluid">
-                <h3>Hello <span id="changling">World</span>, I'm Tariq Hirji.</h3>
-            </div>
+<body>
+    <!-- NAVBAR SECTION -->
+    <!-- Next steps: changes colours as it reaches different bg colours! -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tariq Hirji</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Dropdown menu for smaller screens -->
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            <!-- fluid container to take up the rest of the landing -->
-            <!-- LEFT = Picture of myself, RIGHT = intro blurb w/ button -->
+    <!-- LANDING Section -->
+    <section id="landing">
+        <div class="jumbotron-fluid">
+            <h3>Hello <span id="changling">World</span>, I'm Tariq Hirji.</h3>
+        </div>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Takes up whole viewpoint (vp) on small devices, half on medium + -->
-                    <!-- LEFT, image -->
-                    <div class="col-6">
-                        <img src="img/me.jpg" alt="Tariq" class="img-responsive" id="me"/>
-                    </div>
+        <!-- LEFT = Picture of myself, RIGHT = intro blurb w/ button -->
 
-                    <!-- RIGHT, blurb w/ button -->
-                    <div class="col-6" id="blurb">
-                        <p>I am a student developer at the University of Western Ontario who is currently
-                            working towards an honours specialization in computer science.  
-                        </p>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left side, img of me, should take up whole section of page in small -->
+                <div class="col-12 col-md-6" id="me">
+                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" />
+                </div>
+                <!-- Right side, blurb with button -->
+                <div class="col-12 col-md-6" id="blurb">
+                    <p>
+                        I am a student developer at the University of Western Ontario who is currently
+                        working towards an honours specialization in computer science.
+                    </p>
 
-                        <p>
-                            In my first year of university, i discovered my passion for programming
-                            and immediately found many ideas of ways to apply it. Over the course of being at university, 
-                            some interests I've developed include web design, computer graphics, game development and artificial intelligence. 
-                        </p>
+                    <p>
+                        In my first year of university, i discovered my passion for programming
+                        and immediately found many ideas of ways to apply it. Over the course of being at university,
+                        some interests I've developed include web design, computer graphics, game development and
+                        artificial intelligence.
+                    </p>
 
-                        <h5>Think we'd work well together?</h5>
-                        <button type="button" class="btn btn-primary" id="landingbtn">Contact me</button>
-                    </div>
+                    <h5>Think we'd work well together?</h5>
+                    <button type="button" class="btn btn-primary" id="landingbtn">Contact me</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- SKILLS section -->
-        <!-- 3 cards demonstrating my skills, then 3 icons demonstrating my traits -->
-        <!-- Next steps: card animation when scrolling to 'skills' -->
-        <section id="skills">
-            <div class="container-fluid section-title" >
+    <!-- SKILLS section -->
+    <!-- 3 cards demonstrating my skills, then 3 icons demonstrating my traits -->
+    <!-- Next steps: card animation when scrolling to 'skills' -->
+    <!-- <section id="skills">
+        <div class="container-fluid section-title">
             <h1>Skills</h1>
 
-            </div>
-        </section>
+        </div>
+    </section> -->
 
 
 
-        
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>

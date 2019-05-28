@@ -67,18 +67,25 @@ body {
 #me {
     width: 50vw !important;
     height: 70vh !important;
-    margin-left: -15px !important;
+    display: flex !important;
+    /* margin-left: -15px !important; */
+}
+
+#pic {
+    width: 100vw !important;
+    height: 70vh !important;
+    margin-left: -15px !important;  
 }
 
 /* Landing intro */
 
 #blurb {
     height: 70vh !important;
-    width: 40vw !important;
+    width: 50vw !important;
     padding-top: 100px !important;
     padding-left: 30px !important;
     background-color: lightskyblue !important;
-    overflow: scroll !important;
+    /* overflow: scroll !important; */
 }
 
 #blurb h5 {
@@ -93,10 +100,7 @@ body {
 
 /* Skills Section */
 
-#skills {
-    /* background-image: url(/img/skillsbg.jpg) !important; */
-    /* opacity: 0 !important;; */
-}
+
 /* Reuse class for all section  headers */
 .section-title {
     font-family: 'Share Tech Mono', monospace !important;
