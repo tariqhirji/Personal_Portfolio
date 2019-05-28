@@ -1,3 +1,20 @@
+/* Globals */
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Reuse class for all section  headers */
+.section-title {
+    font-family: 'Share Tech Mono', monospace !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    color: white !important;
+}
+
+
 /* Navbar Section */
 .navbar {
     background-color: lightskyblue !important;
@@ -17,6 +34,7 @@
     font-size: 35px !important;
     font-weight: 300 !important;
     padding-left: 20px !important;
+    transition-duration: 1.5s !important;
 }
 
 .nav-link {
@@ -31,6 +49,10 @@
 }
 
 .nav-link:hover {
+    color: black !important;
+}
+
+.navbar-brand:hover {
     color: black !important;
 }
 
@@ -68,7 +90,6 @@ body {
     width: 50vw !important;
     height: 70vh !important;
     display: flex !important;
-    /* margin-left: -15px !important; */
 }
 
 #pic {
@@ -85,27 +106,42 @@ body {
     padding-top: 100px !important;
     padding-left: 30px !important;
     background-color: lightskyblue !important;
+    color: white !important;
     /* overflow: scroll !important; */
 }
 
 #blurb h5 {
-    margin-top: 35px !important;
+    margin-top: 45px !important;
 }
 
 #landingbtn {
     margin-top: 5px !important;
+    background-color: lightskyblue !important;
+    border-color: white !important;
     padding: 6px 10px !important;
     margin-bottom: 30px !important;
+    transition-duration: 1s !important;
+}
+
+#landingbtn:hover {
+    color: lightskyblue !important;
+    border-color: lightskyblue !important;
+    background-color: white !important;
 }
 
 /* Skills Section */
 
+#skills {
+    background-image: url(/img/skillsbg.jpg) !important;
+}
 
-/* Reuse class for all section  headers */
-.section-title {
-    font-family: 'Share Tech Mono', monospace !important;
-    text-transform: uppercase !important;
+
+.card {
+    font-family: 'Roboto', sans-serif !important;
+    margin-bottom: 10px !important;
+    background-color: rgb(220, 220, 220) !important;
+}
+
+.card-title {
     text-align: center !important;
-    padding-top: 30px !important;
-    padding-bottom: 20px !important;
 }
