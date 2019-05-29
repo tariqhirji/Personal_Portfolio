@@ -17,7 +17,7 @@
     <!-- NAVBAR SECTION -->
     <!-- Next steps: changes colours as it reaches different bg colours! -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Tariq Hirji</a>
+        <a class="navbar-brand" href="index.html">Tariq Hirji</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>
@@ -59,13 +59,14 @@
                 <!-- Right side, blurb with button -->
                 <div class="col-12 col-md-6" id="blurb">
                     <p>
-                        I am a student developer at the University of Western Ontario who is currently
-                        working towards an honours specialization in computer science.
+                        I am a student developer at the University of Western Ontario and am currently
+                        working towards an honours specialization in computer science. In my first year of university, 
+                        i discovered my passion for programming and immediately found many ideas of ways to apply it.
                     </p>
 
+                    <br>
                     <p>
-                        In my first year of university, i discovered my passion for programming
-                        and immediately found many ideas of ways to apply it. Over the course of being at university,
+                        Over the course of being at university,
                         some interests I've developed include web design, computer graphics, game development and
                         artificial intelligence.
                     </p>
@@ -77,7 +78,7 @@
         </div>
     </section>
 
-
+    <a id="skills-section" class="section-breakpoint"></a>
     <!-- SKILLS section -->
     <!-- 3 cards demonstrating my skills, then 3 icons demonstrating my traits -->
     <!-- Next steps: card animation when scrolling to 'skills' -->
@@ -85,11 +86,12 @@
         <div class="container-fluid section-title">
             <h1>Skills</h1>
         </div>
-
+        <!-- Cards for showcasing specific categories -->
         <div class="container-fluid" id="cards">
-            <div class="row">
-                <div class="col-12 col-md-4" id="language_card">
-                    <div class="card">
+            <div class="row" id="cards">
+                <div class="col-12 col-md-4">
+                    <!-- Card 1: Programming Languages -->
+                    <div class="card" id="language_card">
                         <div class="card-body">
                             <h5 class="card-title">
                                 Languages
@@ -98,6 +100,7 @@
                             <ul>
                                 <li>Java</li>
                                 <li>HTML / CSS / JS</li>
+                                <li>React</li>
                                 <li>C</li>
                                 <li>Python</li>
                                 <li>Git</li>
@@ -107,33 +110,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4" id="language_card">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Frameworks & Tools 
-                                    <i class="fas fa-tools"></i>
-                                </h5>
-                                <ul>
-                                    <li>Bootstrap 4.0</li>
-                                    <li>React</li>
-                                    <li>JQuery</li>
-                                    <li>Angular</li>
-                                    <li>JSX</li>
-                                    <li>Figma</li>
-                                    <li>Draw.io</li>
-                                    <li>Trello</li>
-                                    <li>Slack</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-12 col-md-4" id="language_card">
-                    <div class="card">
+                <div class="col-12 col-md-4">
+                    <!-- Card 2: Frameworks and Tools -->
+                    <div class="card" id="tools_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                    Familiar Software
-                                    <i class="fas fa-desktop"></i>
+                                Frameworks & Tools
+                                <i class="fas fa-tools"></i>
+                            </h5>
+                            <ul>
+                                <li>Bootstrap 4.0</li>
+                                <li>React.js</li>
+                                <li>JQuery</li>
+                                <li>Angular</li>
+                                <li>JSX</li>
+                                <li>Figma</li>
+                                <li>Draw.io</li>
+                                <li>Trello</li>
+                                <li>Slack</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <!-- Card 3: Familiar Software  -->
+                    <div class="card" id="software_card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Familiar Software
+                                <i class="fas fa-desktop"></i>
                             </h5>
                             <ul>
                                 <li>VSCode</li>
@@ -143,17 +148,62 @@
                                 <li>IntelliJ</li>
                                 <li>RStudio</li>
                                 <li>PyCharm</li>
-                                <li>Microsoft Office (Excel, Access, etc.)</li>
+                                <li>Microsoft Office</li>
                                 <li>Xcode</li>
-                                
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
 
+            <div class="row" id="icons">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-bolt" class="card-img-top"></i>
+                            <div class="card-title">
+                                <h5>Quick Learner</h5>
+                            </div>
+                            <p class="card-text">
+                                I quickly develops new skills, even more so if I am interested in 
+                                the topic.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-user-friends"></i>
+                            <div class="card-title">
+                                <h5>Team Player</h5>
+                            </div>
+                            <p class="card-text">
+                                I enjoy working on a team with others and feel that people work better when in collaboration. 
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="card-title">
+                                <h5>Innovative</h5>
+                            </div>
+                            <p class="card-text">
+                                I like to try new and creative ways to expand on what has already been accomplished.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </section>
 
 
