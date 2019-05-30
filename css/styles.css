@@ -4,16 +4,12 @@ body {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.section-breakpoint {
-    
-}
-
 .section-title {
     font-family: 'Share Tech Mono', monospace !important;
     text-transform: uppercase !important;
     text-align: center !important;
-    padding-top: 45px !important;
-    padding-bottom: 35px !important;
+    padding-top: 10vh !important;
+    padding-bottom: 45px !important;
     color: black !important;
 }
 
@@ -27,7 +23,7 @@ body {
 }
 
 #navigation {
-    padding-right: 30px !important;
+    background-color: lightskyblue !important;
 }
 
 .navbar-brand {
@@ -35,7 +31,7 @@ body {
     font-family: 'Share Tech Mono', monospace !important;
     font-size: 35px !important;
     font-weight: 300 !important;
-    padding-left: 20px !important;
+    padding-left: 10px !important;
     transition-duration: 1.4s !important;
 }
 
@@ -107,6 +103,7 @@ body {
     width: 50vw !important;
     padding-top: 90px !important;
     padding-left: 30px !important;
+    /* background-color: rgba(135, 206, 250, 0.8) !important; */
     background-color: lightskyblue !important;
     color: white !important;
     /* overflow: scroll !important; */
@@ -131,16 +128,20 @@ body {
     background-color: white !important;
 }
 
-/* Skills Section */
+/* SKILLS Section */
 
 #skills {
-    background-color: #DEDEDE !important;
-    /* width: 100vw !important; */
-    /* height: 90vh !important; */
+    /* background-color: #f2f2f2 !important; */
+    background-color: rgba(65, 105, 225, 0.450) !important;
+    /* background-color: rgba(173, 216, 230, 0.2) !important; */
 }
 
 #language_card {
     height: 308px !important;
+}
+
+#cards ul {
+    list-style-type: circle;
 }
 
 .card {
@@ -153,9 +154,11 @@ body {
     text-align: center !important;
 }
 
+/* ICONS Section */
+
 #icons .card {
-    background-color: #DEDEDE !important;
-    border-color: #DEDEDE !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
     text-align: center !important;
 }
 
@@ -163,3 +166,25 @@ body {
     font-size: 75px !important;
     padding-bottom: 20px !important;
 }
+
+/* PROJECT section */
+
+#projects .card {
+    border-color: transparent !important;
+    margin-bottom: 80px !important;
+}
+
+#projects .card-text {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+#projects button {
+    margin: 10px !important;
+}
+
+#p2 {
+    list-style-position: inside !important;
+}
+
+

@@ -22,6 +22,7 @@
             aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Dropdown menu for smaller screens -->
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
@@ -29,7 +30,7 @@
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -53,14 +54,14 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Left side, img of me, should take up whole section of page in small -->
-                <div class="col-12 col-md-6" id="me">
+                <div class="col-12 col-lg-6" id="me">
                     <img src="img/me.jpg" id="pic" alt="Tariq Hirji" />
                 </div>
                 <!-- Right side, blurb with button -->
-                <div class="col-12 col-md-6" id="blurb">
+                <div class="col-12 col-lg-6" id="blurb">
                     <p>
                         I am a student developer at the University of Western Ontario and am currently
-                        working towards an honours specialization in computer science. In my first year of university, 
+                        working towards an honours specialization in computer science. In my first year of university,
                         i discovered my passion for programming and immediately found many ideas of ways to apply it.
                     </p>
 
@@ -79,31 +80,34 @@
     </section>
 
     <a id="skills-section" class="section-breakpoint"></a>
+
     <!-- SKILLS section -->
     <!-- 3 cards demonstrating my skills, then 3 icons demonstrating my traits -->
     <!-- Next steps: card animation when scrolling to 'skills' -->
     <section id="skills">
         <div class="container-fluid section-title">
             <h1>Skills</h1>
+            <p class="text-muted"><i>* Cards are in order of most proficient to least proficient *</i></p>
         </div>
         <!-- Cards for showcasing specific categories -->
         <div class="container-fluid" id="cards">
             <div class="row" id="cards">
                 <div class="col-12 col-md-4">
                     <!-- Card 1: Programming Languages -->
-                    <div class="card" id="language_card">
+                    <div class="card shadow" id="language_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Languages
+                                <u>Languages</u>
                                 <i class="fas fa-code"></i>
                             </h5>
                             <ul>
-                                <li>Java</li>
                                 <li>HTML / CSS / JS</li>
+                                <li>Java</li>
                                 <li>React</li>
-                                <li>C</li>
-                                <li>Python</li>
                                 <li>Git</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>C</li>
                                 <li>Prolog</li>
                                 <li>R</li>
                             </ul>
@@ -112,10 +116,10 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <!-- Card 2: Frameworks and Tools -->
-                    <div class="card" id="tools_card">
+                    <div class="card shadow" id="tools_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Frameworks & Tools
+                                <u>Frameworks/Tools</u>
                                 <i class="fas fa-tools"></i>
                             </h5>
                             <ul>
@@ -123,10 +127,10 @@
                                 <li>React.js</li>
                                 <li>JQuery</li>
                                 <li>Angular</li>
-                                <li>JSX</li>
-                                <li>Figma</li>
-                                <li>Draw.io</li>
                                 <li>Trello</li>
+                                <li>UML</li>
+                                <li>Figma</li>
+                                <li>JSX</li>
                                 <li>Slack</li>
                             </ul>
                         </div>
@@ -134,10 +138,10 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <!-- Card 3: Familiar Software  -->
-                    <div class="card" id="software_card">
+                    <div class="card shadow" id="software_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Familiar Software
+                                <u>Familiar Software</u>
                                 <i class="fas fa-desktop"></i>
                             </h5>
                             <ul>
@@ -156,16 +160,21 @@
                 </div>
             </div>
 
+            <!-- ICONS section -->
+            <!-- Freestanding Icons in cards. -->
+
             <div class="row" id="icons">
                 <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Card 1: Quick learner -->
                     <div class="card">
                         <div class="card-body">
+                            <!-- Lightning icon -->
                             <i class="fas fa-bolt" class="card-img-top"></i>
                             <div class="card-title">
                                 <h5>Quick Learner</h5>
                             </div>
                             <p class="card-text">
-                                I quickly develops new skills, even more so if I am interested in 
+                                I quickly develops new skills, even more so if I am interested in
                                 the topic.
                             </p>
                         </div>
@@ -173,22 +182,27 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Card 2: Team Player -->
                     <div class="card">
                         <div class="card-body">
+                            <!-- Team icon -->
                             <i class="fas fa-user-friends"></i>
                             <div class="card-title">
                                 <h5>Team Player</h5>
                             </div>
                             <p class="card-text">
-                                I enjoy working on a team with others and feel that people work better when in collaboration. 
+                                I enjoy working on a team with others and want to help others succeed alongside me.
                             </p>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Card 3: Innovative -->
+                    <!-- Note: Fill take up entire row when in medium screen size -->
                     <div class="card">
                         <div class="card-body">
+                            <!-- Lightbulb icon  -->
                             <i class="fas fa-lightbulb"></i>
                             <div class="card-title">
                                 <h5>Innovative</h5>
@@ -202,8 +216,76 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <a id="projects-section"></a>
 
+    <!-- PROJECTS section -->
+    <!-- Next steps: adding fade in from sides for projects -->
+    <section id="projects">
+        <div class="container-fluid section-title">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="container">
+            <!-- Project 1 -->
+            <div class="card" id="p1">
+                <div class="row no-gutters">
+                    <!-- First half of card - IMAGE -->
+                    <div class="col-md-7">
+                        <img src="img/stock1.jpeg" alt="Project 1" class="card-img">
+                    </div>
+
+                    <!-- Second half of card - DESCRIPTION -->
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 1</h3>
+                            <p class="card-title text-muted"><i> Bootstrap Project</i></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Proin vel tristique purus.
+                            </p>
+                            <ul class="card-text">
+                                <li>Point 1</li>
+                                <li>Point 2</li>
+                                <li>Point 3</li>
+                                <li>Point 4</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-primary">View project</button>
+                            <button type="button" class="btn btn-outline-info">View Code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card, reverse order of img and description -->
+            <div class="card" id="p2">
+                <div class="row no-gutters">
+                    <!-- Second half of card - DESCRIPTION -->
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 2</h3>
+                            <p class="card-title text-muted"><i> Bootstrap Project</i></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Proin vel tristique purus.
+                            </p>
+
+                            <ul class="card-text">
+                                <li>Point 1</li>
+                                <li>Point 2</li>
+                                <li>Point 3</li>
+                                <li>Point 4</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-primary">View project</button>
+                            <button type="button" class="btn btn-outline-info">View Code</button>
+                        </div>
+                    </div>
+                    <!-- First half of card - IMAGE -->
+                    <div class="col-md-7">
+                        <img src="img/stock2.jpeg" alt="Project 1" class="card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more projects as they are created -->
     </section>
 
 
