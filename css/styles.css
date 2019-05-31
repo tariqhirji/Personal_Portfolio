@@ -24,6 +24,7 @@ body {
 
 #navigation {
     background-color: lightskyblue !important;
+    width: 100% !important;
 }
 
 .navbar-brand {
