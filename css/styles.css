@@ -13,6 +13,10 @@ body {
     color: black !important;
 }
 
+body {
+    padding-top: 10vh !important;
+}
+
 /* Navbar Section */
 .navbar {
     background-color: lightskyblue !important;
@@ -58,31 +62,76 @@ body {
 /* LANDING Section */
 
 /* Jumbotron Component */
-body {
-    padding-top: 10vh !important;
-}
 
-.jumbotron-fluid{
+.jumbotron-fluid {
     width: 100vw !important;
-    color: white !important;
     opacity: 0.87 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     background-image: linear-gradient(to right, #484848, #555555, #636363, #717171, #808080);
-    font-family: 'VT323', monospace !important;
     height: 20vh !important;
-    line-height: 150px !important;
-    text-align: center !important;
+}
+/* Jumbotron content */
+.content {
+    color: white !important;
+    font-family: 'VT323', monospace !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-.jumbotron-fluid h3 {
-    font-size: 55px !important;
-    display: inline-block !important;
-    vertical-align: middle !important;
-    letter-spacing: 5px !important;
+/* Text around changling */
+.slider-wrapper {
+    font-size: 60px !important;
+    display: flex !important;
 }
 
-#changling {
+/* Masking div for changling */
+.slider {
+    height: 70px !important;
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+    overflow: hidden !important;
+}
+.slider-text-start {
+    color: #828282 !important;
+    animation: slide 8s linear infinite !important;
+}
+
+/* Colour for changling text */
+.slider-text {
     color: #828282 !important;
 }
+/* Set all texts to that height */
+.slider div {
+    height: 70px;
+    margin-bottom: 70px;
+    width: fit-content !important;
+    text-align: center !important ;
+    justify-content: center !important;
+    box-sizing: border-box;
+  }
+
+/* Animation */
+/* each text has height of 70px and 70px margin-bottom */
+/* Must move up 140px at a time */
+/* 4 words */
+
+@keyframes slide {
+    0% {margin-top: 0px;} 
+    20% {margin-top: 0px;}
+    25% {margin-top: -140px;}
+    45% {margin-top: -140px;}
+    50% {margin-top: -280px;}
+    70% {margin-top: -280px;}
+    75% {margin-top: -420px;}
+    97% {margin-top: -420px;}
+    100% {margin-top: 0px;}
+}
+
+
+
 
 /* Landing Img */
 #me {
@@ -94,7 +143,7 @@ body {
 #pic {
     width: 100vw !important;
     height: 70vh !important;
-    margin-left: -15px !important;  
+    margin-left: -15px !important;
 }
 
 /* Landing intro */
@@ -148,7 +197,7 @@ body {
 .card {
     font-family: 'Roboto', sans-serif !important;
     margin-bottom: 30px !important;
-    background-color:white !important;
+    background-color: white !important;
 }
 
 .card-title {
@@ -163,7 +212,7 @@ body {
     text-align: center !important;
 }
 
-#icons i{
+#icons i {
     font-size: 75px !important;
     padding-bottom: 20px !important;
 }
@@ -187,5 +236,3 @@ body {
 #p2 {
     list-style-position: inside !important;
 }
-
-
