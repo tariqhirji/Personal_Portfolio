@@ -70,33 +70,33 @@ body {
     align-items: center !important;
     justify-content: center !important;
     background-image: linear-gradient(to right, #484848, #555555, #636363, #717171, #808080);
-    height: 20vh !important;
-}
-/* Jumbotron content */
-.content {
-    color: white !important;
-    font-family: 'VT323', monospace !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    padding: 20px !important;
 }
 
 /* Text around changling */
 .slider-wrapper {
+    color: white !important;
+    font-family: 'VT323', monospace !important;
     font-size: 60px !important;
     display: flex !important;
+    /* align-items: center !important; */
+    /* justify-content: center !important; */
 }
 
 /* Masking div for changling */
 .slider {
-    height: 70px !important;
+    height: 60px !important;
     padding-left: 15px !important;
     padding-right: 0px !important;
     overflow: hidden !important;
 }
-.slider-text-start {
+.slider div {
     color: #828282 !important;
-    animation: slide 8s linear infinite !important;
+    height: 60px !important;
+    margin-bottom: 60px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 2px 15px !important;
 }
 
 /* Colour for changling text */
