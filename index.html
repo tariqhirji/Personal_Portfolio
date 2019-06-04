@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#about-section">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
                 </li>
             </ul>
         </div>
@@ -60,13 +60,14 @@
                 <!-- Right side, blurb with button -->
                 <div class="col-12 col-lg-6" id="blurb">
                     <p>
+                        <!-- <code>&nbsp;&nbsp;&nbsp;</code> -->
                         I am a student developer at the University of Western Ontario and am currently
                         working towards an honours specialization in computer science. In my first year of university,
                         i discovered my passion for programming and immediately found many ideas of ways to apply it.
                     </p>
-
                     <br>
                     <p>
+                        <!-- <code>&nbsp;&nbsp;&nbsp;</code> -->
                         Over the course of being at university,
                         some interests I've developed include web design, computer graphics, game development and
                         artificial intelligence.
@@ -293,10 +294,10 @@
     <!-- ABOUT section -->
     <section id="about">
         <div class="hero">
-                <div class="hero-content">
-            <div class="container-fluid section-title">
-                <h1 id="title">about</h1>
-            </div>
+            <div class="hero-content">
+                <div class="container-fluid section-title">
+                    <h1 id="title">about</h1>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend lobortis mauris, ac tristique
                     nunc suscipit et. Suspendisse interdum malesuada massa vitae fermentum. Etiam dapibus lacus
                     consectetur tincidunt tincidunt. Praesent id diam ac dui venenatis imperdiet. Etiam nibh magna,
@@ -313,16 +314,64 @@
                     porta fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                     turpis egestas.
                 </p>
-                <p>
-                    Vestibulum tincidunt fermentum est in sagittis. Morbi dignissim ligula vitae ex eleifend, facilisis
-                    mattis arcu placerat. Nullam eleifend et elit ut tempus. Fusce semper metus non ipsum laoreet
-                    bibendum. Fusce ex est, blandit ut luctus vestibulum, mattis et purus. Quisque molestie, ligula sit
-                    amet scelerisque posuere, quam tellus accumsan ligula, nec sollicitudin mauris tortor vel metus.
-                    Nunc aliquet vehicula tortor, non varius libero auctor vitae. In aliquet viverra turpis et feugiat.
-                    Curabitur sed rhoncus risus, vitae dictum orci.
-                </p>
             </div>
-            <img src="img/asteroids.gif" alt="background" id="hero-bg"/>
+            <img src="img/asteroids.gif" alt="background" id="hero-bg" />
+        </div>
+    </section>
+
+    <a id="contact-section"></a>
+
+    <!-- CONTACT section -->
+    <!-- Next steps: social media icons, animate buttons -->
+    <section id="contact">
+        <div class="container-fluid section-title">
+            <h1>contact</h1>
+        </div>
+
+        <div class="container-fluid" id="end-blurb">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-12 align-self-center">
+                    <p>Want my help on a project of yours? Think we would make a good team together?
+                        Want to see what my programming skills are like? Have some feedback for me? Feel free to reach
+                        out.</p>
+                    <button type="button" class="btn btn-info" id="email">
+                        <a href="mailto:tariqhirji15@gmail.com">Send me an email </a>
+                        <i class="far fa-envelope-open"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 align-self-center">
+                    <button type="button" class="btn btn-primary" id="linked">
+                        <a href="mailto:tariqhirji15@gmail.com">Connect with me</a>
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-12 align-self-center">
+                    <button type="button" class="btn btn-dark" id="email">
+                        <a href="mailto:tariqhirji15@gmail.com">View how I document my code</a>
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid align-items-end" id="footer">
+            <div class="row">
+                <div class="col-4 text-left">
+                    <p class="text-muted">Tariq Hirji <i class="far fa-copyright" id="copyright"></i> 2019 </p>
+                </div>
+                <div class="col text-center">
+                    <p class="text-muted">Last updated: June 4th, 2019</p>
+                </div>
+                <div class="col text-right" id="socials">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
         </div>
     </section>
 
