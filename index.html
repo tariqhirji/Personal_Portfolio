@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Share+Tech+Mono|VT323&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
@@ -293,29 +294,56 @@
 
     <!-- ABOUT section -->
     <section id="about">
-        <div class="hero">
-            <div class="hero-content">
-                <div class="container-fluid section-title">
-                    <h1 id="title">about</h1>
+        <!-- Carousel of about me-->
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 - Me -->
+                <div class="carousel-item active" id="c1">
+                    <img src="img/mariobros.gif" class="d-block w-100" alt="mario">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="section-title">About:<span id="c1-title">me</span></h1>
+                                    <p>This is the part where I actually talk about myself and position this element.
+                                        Feel free to scroll through this carousel to get to know me better.
+                                        Alternatively, scroll down to find out how to contact me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend lobortis mauris, ac tristique
-                    nunc suscipit et. Suspendisse interdum malesuada massa vitae fermentum. Etiam dapibus lacus
-                    consectetur tincidunt tincidunt. Praesent id diam ac dui venenatis imperdiet. Etiam nibh magna,
-                    scelerisque eget consectetur vitae, posuere nec erat. Praesent at iaculis magna. Curabitur ante
-                    massa, porttitor eu iaculis quis, pharetra non urna. Mauris turpis magna, sagittis quis urna vel,
-                    tempor volutpat magna. Integer dictum tincidunt hendrerit.
-                </p>
-                <p>
-                    Phasellus iaculis, turpis ac aliquam gravida, elit justo euismod enim, ut finibus augue eros et
-                    lorem. Phasellus at vulputate mauris. Ut quis ex laoreet nisi aliquam bibendum sed non lectus.
-                    Vivamus scelerisque luctus nisl luctus laoreet. Quisque placerat malesuada massa ut volutpat.
-                    Pellentesque cursus blandit congue. In iaculis congue elementum. Integer ex nibh, pulvinar sed est
-                    id, aliquam iaculis arcu. Praesent nec dictum nulla. Etiam at laoreet felis. Nunc ultricies ex ac
-                    porta fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas.
-                </p>
+                <!-- Slide 2 - Family -->
+                <div class="carousel-item" id="c2">
+                    <img src="img/asteroids.gif" class="d-block w-100" alt="asteroids">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+                <!-- Slide 3 - Sports -->
+                <div class="carousel-item" id="c3">
+                    <img src="img/c3.jpg" class="d-block w-100" alt="stock">
+                </div>
+                <!-- Slide 4 - Yusuf -->
+                <div class="carousel-item" id="c4">
+                    <img src="img/stock2.jpeg" class="d-block w-100" alt="another stock">
+                </div>
+                <!-- Slide 5 - Video games -->
+                <div class="carousel-item" id="c5">
+                    <img src="img/skillsbg.jpg" class="d-block w-100" alt="another stock">
+                </div>
             </div>
-            <img src="img/asteroids.gif" alt="background" id="hero-bg" />
+
+            <!-- Carousel previous button -->
+            <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <!-- Carousel next button -->
+            <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
 
@@ -323,7 +351,7 @@
 
     <!-- CONTACT section -->
     <section id="contact">
-        
+
         <div class="container-fluid section-title">
             <h1>contact</h1>
         </div>
@@ -350,7 +378,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-12 align-self-center">
                     <button type="button" class="btn btn-dark" id="email">
-                        <a href="mailto:tariqhirji15@gmail.com">View how I document my code</a>
+                        <a href="https://github.com/tariqhirji" target="_blank">View how I document my code</a>
                         <i class="fab fa-github"></i>
                     </button>
                 </div>
@@ -360,11 +388,11 @@
         <div class="container-fluid align-items-end" id="footer">
             <div class="row">
                 <div class="col-6 text-left" id="copy">
-                    <p class="text-muted">Tariq Hirji <i class="far fa-copyright" id="copyright"></i> 2019 </p>
+                    <p>Tariq Hirji <i class="far fa-copyright" id="copyright"></i> 2019 </p>
                 </div>
                 <div class="col-6 text-right" id="socials">
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://github.com/tariqhirji" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/tariqhirji/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <i class="fab fa-linkedin"></i>
                 </div>
             </div>

@@ -119,6 +119,7 @@ body {
     margin-top: 5px !important;
     background-color: lightskyblue !important;
     border-color: white !important;
+    color: white !important;
     padding: 6px 10px !important;
     margin-bottom: 30px !important;
     transition-duration: 0.8s !important;
@@ -189,51 +190,51 @@ body {
 
 /* ABOUT */
 
-/* #about {
-    background-color: #f2f2f2 !important;
-} */
-
-#title {
-    color: white !important;
-}
-
-.hero {
-    position: relative !important;
+#about {
     width: 100vw !important;
     height: 100vh !important;
 }
 
-.hero-content {
-    z-index: 2 !important;
+#about-carousel {
+    height: 100vh !important;
+    width: 100vw !important;
     position: relative !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    color: white !important;
-    overflow: scroll !important;
 }
 
-#hero-bg {
-    width: 100vw !important;
+/* Keeps all heights the same */
+.carousel-inner {
+    max-height: 100vh !important;
+}
+
+/* Carousel captions placement and styling  */
+#c1 .carousel-caption {
+    margin-bottom: 300px !important;
+}
+
+#c1-title {
+    color: red !important;
+}
+
+.carousel img {
     height: 100vh !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    opacity: 1 !important;
-    overflow: scroll !important;    
+    width: 100vw !important;
 }
 
 /* CONTACT  */
 
 #contact {
-    /* background-color: #e7e5e5 !important; */
-    background-image: linear-gradient(to top, #87cefa, #61b7f8, #439ff4, #3685ed, #4169e1) !important;;
+    /* background-image: linear-gradient(to top, #87cefa, #61b7f8, #439ff4, #3685ed, #4169e1) !important; */
+    background-image: linear-gradient(to left top, #9a9a9a, #838383, #6c6c6c, #575656, #424141) !important;;
     width: 100vw !important;
     height: 100vh !important;
 }
 
 #end-blurb {
     text-align: center !important;
+    color: black !important;
     width: 100vw !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
 }
 
 #contact button{
@@ -267,33 +268,16 @@ body {
 }
 
 #footer {
-    margin-top: 120px !important;
+    margin-top: 110px !important;
     margin-bottom: 0px !important;
     padding-bottom: 0px !important;
 }
 
 #copy {
     padding-left: 20px !important;
+    margin-top: 5px !important;
 }
 #socials i {
     font-size: 30px !important;
     padding-right: 20px !important;
 }
-
-
-
-
-/* .hero-img {
-    height: 100vh !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/skillsbg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-text {
-    text-align: center !important;
-    position: relative !important;
-    justify-content: center !important;
-} */
