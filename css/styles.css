@@ -225,7 +225,8 @@ body {
 /* CONTACT  */
 
 #contact {
-    background-color: #e7e5e5 !important;
+    /* background-color: #e7e5e5 !important; */
+    background-image: linear-gradient(to top, #87cefa, #61b7f8, #439ff4, #3685ed, #4169e1) !important;;
     width: 100vw !important;
     height: 100vh !important;
 }
@@ -238,7 +239,7 @@ body {
 #contact button{
     border-radius: 0 !important;
     padding: 5px 10px !important;
-    margin-top: 20px !important;
+    margin-top: 25px !important;
     margin-bottom: 20px !important;
     width: 300px !important;
     transition: 1.5s !important;
@@ -262,15 +263,22 @@ body {
 }
 
 #copyright {
-    margin-left: 0px !important;
+    margin-left: 15px !important;
 }
 
 #footer {
-    margin-top: 130px !important;
+    margin-top: 120px !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
 
-
-
+#copy {
+    padding-left: 20px !important;
+}
+#socials i {
+    font-size: 30px !important;
+    padding-right: 20px !important;
+}
 
 
 
