@@ -1,5 +1,8 @@
 /* Globals */
-
+html {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
 body {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -26,7 +29,6 @@ body {
 #navigation {
     /* BG colour needed to fix transparent bg, however, does not cover entire vp */
     background-color: lightskyblue !important; 
-    width: 100% !important;
 }
 
 .navbar-brand {
@@ -42,11 +44,10 @@ body {
     font-family: 'Share Tech Mono', monospace !important;
     text-transform: uppercase !important;
     color: #ffffff !important;
-    margin-right: 20px !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     font-weight: 300 !important;
     transition-duration: 1.4s !important;
-    padding-right: 10px !important;
+    padding-right: 20px !important;
 }
 
 .nav-link:hover {
@@ -58,6 +59,11 @@ body {
 }
 
 /* LANDING Section */
+
+#landing .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 /* JUMBOTRON  */
 body {
@@ -92,12 +98,12 @@ body {
     width: 50vw !important;
     height: 70vh !important;
     display: flex !important;
+    padding: 0px !important;
 }
 
 #pic {
     width: 100vw !important;
     height: 70vh !important;
-    margin-left: -15px !important;
 }
 
 /* LANDING INTRO */
@@ -105,8 +111,7 @@ body {
 #blurb {
     height: 70vh !important;
     width: 50vw !important;
-    padding-top: 80px !important;
-    padding-left: 20px !important;
+    padding: 80px 40px 0px 30px !important;
     background-color: lightskyblue !important;
     color: white !important;
 }
