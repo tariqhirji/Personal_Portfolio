@@ -55,11 +55,11 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Left side, img of me, should take up whole section of page in small -->
-                <div class="col-12 col-lg-6" id="me">
+                <div class="col-12 col-md-6" id="me">
                     <img src="img/me.jpg" id="pic" alt="Tariq Hirji" />
                 </div>
                 <!-- Right side, blurb with button -->
-                <div class="col-12 col-lg-6" id="blurb">
+                <div class="col-12 col-md-6" id="blurb">
                     <p>
                         <!-- <code>&nbsp;&nbsp;&nbsp;</code> -->
                         I am a student developer at the University of Western Ontario and am currently
@@ -75,7 +75,11 @@
                     </p>
 
                     <h5>Think we'd make a good team?</h5>
-                    <button type="button" class="btn btn-primary" id="landingbtn">Work With me</button>
+                    <a href="#contact-section">
+                        <button type="button" class="btn btn-primary animated fadeInUp delay-3s" id="landingbtn">
+                            Work with me
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -96,7 +100,7 @@
             <div class="row" id="cards">
                 <div class="col-12 col-md-4">
                     <!-- Card 1: Programming Languages -->
-                    <div class="card shadow" id="language_card">
+                    <div class="card shadow wow flipInY" id="language_card">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <u>Languages</u>
@@ -118,7 +122,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <!-- Card 2: Frameworks and Tools -->
-                    <div class="card shadow" id="tools_card">
+                    <div class="card shadow wow flipInY" data-wow-delay="1s" id="tools_card">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <u>Frameworks/Tools</u>
@@ -140,7 +144,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <!-- Card 3: Familiar Software  -->
-                    <div class="card shadow" id="software_card">
+                    <div class="card shadow wow flipInY" data-wow-delay="2s" id="software_card">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <u>Familiar Software</u>
@@ -231,7 +235,7 @@
 
         <div class="container">
             <!-- Project 1 -->
-            <div class="card" id="p1">
+            <div class="card wow slideInRight" id="p1">
                 <div class="row no-gutters">
                     <!-- First half of card - IMAGE -->
                     <div class="col-lg-7">
@@ -259,7 +263,7 @@
                 </div>
             </div>
             <!-- Second card, reverse order of img and description -->
-            <div class="card" id="p2">
+            <div class="card wow slideInLeft" id="p2">
                 <div class="row no-gutters">
                     <!-- Second half of card - DESCRIPTION -->
                     <div class="col-lg-5">
@@ -361,7 +365,7 @@
                 <div class="col-lg-6 col-12 align-self-center">
                     <p>Want my help on a project of yours? Think we would make a good team together?
                         Want to see what my programming skills are like? Feel free to reach out.</p>
-                    <button type="button" class="btn btn-info" id="email">
+                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="2s" id="email">
                         <a href="mailto:tariqhirji15@gmail.com">Send me an email </a>
                         <i class="far fa-envelope-open"></i>
                     </button>
@@ -369,7 +373,7 @@
             </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-lg-6 align-self-center">
-                    <button type="button" class="btn btn-primary" id="linked">
+                    <button type="button" class="btn btn-primary wow fadeInUp" data-wow-duration="2s" id="linked">
                         <a href="mailto:tariqhirji15@gmail.com">Connect with me</a>
                         <i class="fab fa-linkedin"></i>
                     </button>
@@ -377,7 +381,7 @@
             </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-12 align-self-center">
-                    <button type="button" class="btn btn-dark" id="email">
+                    <button type="button" class="btn btn-dark wow fadeInUp" data-wow-duration="2s" id="email">
                         <a href="https://github.com/tariqhirji" target="_blank">View how I document my code</a>
                         <i class="fab fa-github"></i>
                     </button>
@@ -387,10 +391,10 @@
 
         <div class="container-fluid align-items-end" id="footer">
             <div class="row">
-                <div class="col-6 text-left" id="copy">
+                <div class="col-6 text-left wow bounceInLeft" id="copy">
                     <p>Tariq Hirji <i class="far fa-copyright" id="copyright"></i> 2019 </p>
                 </div>
-                <div class="col-6 text-right" id="socials">
+                <div class="col-6 text-right wow bounceInRight" id="socials">
                     <a href="https://github.com/tariqhirji" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.instagram.com/tariqhirji/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <i class="fab fa-linkedin"></i>
@@ -406,9 +410,15 @@
 
 
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
