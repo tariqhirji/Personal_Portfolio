@@ -234,7 +234,7 @@ body {
 
 #contact {
     /* background-image: linear-gradient(to top, #87cefa, #61b7f8, #439ff4, #3685ed, #4169e1) !important; */
-    background-image: linear-gradient(to left top, #9a9a9a, #838383, #6c6c6c, #575656, #424141) !important;;
+    background-image: linear-gradient(to bottom, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff) !important;
     width: 100vw !important;
     height: 100vh !important;
 }
