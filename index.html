@@ -226,17 +226,18 @@
 
     <a id="projects-section"></a>
 
-    <!-- PROJECTS section -->
-    <!-- Next steps: adding fade in from sides for projects -->
+    <!-- PROJECTS SECTION -->
+    <!-- Section title -->
     <section id="projects">
         <div class="container-fluid section-title">
             <h1>Projects</h1>
+            <p class="text-muted"><i>* The top project is the project I am currently working on *</i></p>
         </div>
 
         <div class="container">
             <!-- Project 1 -->
             <div class="card wow slideInRight" data-wow-duration="2s" id="p1">
-                <div class="row no-gutters">
+                <div class="row no-gutters align-items-center">
                     <!-- First half of card - IMAGE -->
                     <div class="col-lg-7">
                         <img src="img/stock1.jpeg" alt="Project 1" class="card-img">
@@ -245,44 +246,71 @@
                     <!-- Second half of card - DESCRIPTION -->
                     <div class="col-lg-5">
                         <div class="card-body">
-                            <h3 class="card-title">Project 1</h3>
-                            <p class="card-title text-muted"><i> Web Project</i></p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Proin vel tristique purus.
+                            <h3 class="card-title">FOREVERHERTZ</h3>
+                            <p class="card-title text-muted"><i> Ecommerce Project</i></p>
+                            <p class="card-text">A clothing brand that uses recycled denim to create new styles out of
+                                popular bases.
+                                Pants are tappered to the clients measurements on purchase.
                             </p>
-                            <ul class="card-text">
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
-                                <li>Point 4</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary">View project</button>
-                            <button type="button" class="btn btn-outline-info">View Code</button>
+
+
+                            <!-- Badges -->
+                            <span class="badge badge-pill badge-dark">Webflow CMS</span>
+                            <span class="badge badge-pill badge-dark">Payment Gateway</span>
+                            <span class="badge badge-pill badge-dark">Responsive</span>
+                            <span class="badge badge-pill badge-dark">Dynamic</span>
+
+                            <!-- Line break -->
+                            <div class="w-100"></div>
+
+                            <!-- Button for p1 -->
+                            <button type="button" class="btn btn-outline-dark">View project</button>
+                            <a href="https://github.com/tariqhirji/FOREVER_HERTZ" target="_blank">
+                                <button type="button" class="btn btn-outline-dark">
+                                    View Code
+                                    <i class="fab fa-html5"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Second card, reverse order of img and description -->
-            <div class="card wow slideInLeft" data-wow-duration="2s"id="p2">
-                <div class="row no-gutters">
+
+
+            <!-- Second project, reverse order of img and description -->
+            <div class="card wow slideInLeft" data-wow-duration="2s" id="p2">
+                <div class="row no-gutters align-items-center">
                     <!-- Second half of card - DESCRIPTION -->
                     <div class="col-lg-5">
                         <div class="card-body">
                             <h3 class="card-title">Personal Portfolio</h3>
                             <p class="card-title text-muted"><i> Web Project</i></p>
-                            <p class="card-text"> A portfolio to showcase my development skills and for a record of all past,
-                                present and future projects.
+                            <p class="card-text"> A portfolio to showcase my development skills and to serve as a record
+                                of
+                                all my past, present and future projects.
                             </p>
 
-                            <ul class="card-text">
-                                <li>Uses Bootstrap 4 grid</li>
-                                <li>Timed animations</li>
-                                <li>Image Carousel with captions</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary">View project</button>
-                            <button type="button" class="btn btn-outline-info">View Code</button>
+                            <!-- Badges -->
+                            <span class="badge badge-pill badge-dark">Bootstrap 4 grid <i
+                                    class="fab fa-bootstrap"></i></span>
+                            <span class="badge badge-pill badge-dark">CSS Animations</span>
+                            <span class="badge badge-pill badge-dark">Image Carousel</span>
+                            <span class="badge badge-pill badge-dark">Responsive</span>
+                            <span class="badge badge-pill badge-dark">Static</span>
+
+                            <!-- Line break -->
+                            <div class="w-100"></div>
+
+                            <!-- Buttons for p2 -->
+                            <button type="button" class="btn btn-outline-dark" disabled><del>View Project</del></button>
+                            <a href="https://github.com/tariqhirji/Personal_Portfolio" target="_blank">
+                                <button type="button" class="btn btn-outline-dark">
+                                    View Code <i class="fab fa-html5"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
+
                     <!-- First half of card - IMAGE -->
                     <div class="col-lg-7">
                         <img src="img/stock2.jpeg" alt="Project 1" class="card-img">
@@ -354,62 +382,78 @@
 
     <!-- CONTACT section -->
     <section id="contact">
+        <div class="container-fluid" id="contact-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="section-title">Contact</h1>
+                </div>
+            </div>
 
-        <div class="container-fluid section-title">
-            <h1>contact</h1>
-        </div>
-
-        <div class="container-fluid" id="end-blurb">
-            <div class="row align-items-center justify-content-center">
+            <div class="row justify-content-center" id="closing">
                 <div class="col-lg-6 col-12 align-self-center">
                     <p>Want my help on a project of yours?
-                        Want to see what my programming skills are like? Feel free to reach out.</p>
-                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="email">
+                        Want to see what my programming skills are like? Feel free to reach out.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="email-row">
+                <div class="col-12 align-self-center">
+                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="email-btn">
                         <a href="mailto:tariqhirji15@gmail.com">Send me an email </a>
                         <i class="far fa-envelope-open"></i>
                     </button>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-lg-6 align-self-center">
-                    <button type="button" class="btn btn-primary wow fadeInUp" data-wow-duration="1s" id="linked">
-                        <a href="mailto:tariqhirji15@gmail.com">Connect with me</a>
+
+            <div class="row justify-content-center" id="linked-row">
+                <div class="col-12 align-self-center">
+                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="linked-btn">
+                        <a href="mailto:tariqhirji15@gmail.com">Connect with me </a>
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 col-12 align-self-center">
-                    <button type="button" class="btn btn-dark wow fadeInUp" data-wow-duration="1s" id="email">
+
+            <div class="row justify-content-center" id="github-row">
+                <div class="col-12 align-self-center" id="github-col">
+                    <button type="button" class="btn btn-dark wow fadeInUp" data-wow-duration="1s" id="github-btn">
                         <a href="https://github.com/tariqhirji" target="_blank">View how I document my code</a>
                         <i class="fab fa-github"></i>
                     </button>
                 </div>
             </div>
+
         </div>
 
-        <div class="container-fluid align-items-end" id="footer">
-            <div class="row">
+        <!-- Footer -->
+
+        <div class="container-fluid" id="footer">
+            <div class="row" id="footer-row">
                 <div class="col-6 text-left wow bounceInLeft" id="copy">
-                    <p>Tariq Hirji <i class="far fa-copyright" id="copyright"></i> 2019 </p>
+                    <p class='d-flex align-self-end'>
+                        Tariq Hirji
+                        <i class="far fa-copyright" id="copyright"></i>
+                        2019
+                    </p>
                 </div>
                 <div class="col-6 text-right wow bounceInRight" id="socials">
-                    <a href="https://github.com/tariqhirji" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/tariqhirji/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <i class="fab fa-linkedin"></i>
+                    <a href="https://github.com/tariqhirji" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tariqhirji/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-icon" target="_blank" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
-
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

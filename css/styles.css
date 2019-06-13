@@ -104,6 +104,7 @@ body {
 #pic {
     width: 100vw !important;
     height: 70vh !important;
+    padding: 0px !important;
 }
 
 /* LANDING INTRO */
@@ -111,7 +112,7 @@ body {
 #blurb {
     height: 70vh !important;
     width: 50vw !important;
-    padding: 80px 40px 0px 30px !important;
+    padding: 70px 70px 0px 50px !important;
     background-color: lightskyblue !important;
     color: white !important;
 }
@@ -190,12 +191,25 @@ body {
     margin-right: 15px !important;
 }
 
+
+#projects .card i {
+    margin-left: 3px !important;
+}
+
 #projects button {
     margin: 10px !important;
+    margin-top: 20px !important;
+    transition-duration: 0.3s !important;
 }
 
 #p2 {
     list-style-position: inside !important;
+}
+
+.badge-pill {
+    width: fit-content !important;
+    padding: 5px 15px !important;
+    margin: 5px 3px 10px 10px !important;
 }
 
 /* ABOUT */
@@ -237,15 +251,18 @@ body {
     background-image: linear-gradient(to bottom, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff) !important;
     width: 100vw !important;
     height: 100vh !important;
+    overflow: hidden !important;
 }
 
-#end-blurb {
+#closing {
     text-align: center !important;
-    color: black !important;
-    width: 100vw !important;
     font-size: 18px !important;
-    font-weight: 400 !important;
 }
+
+#email-row, #linked-row, #github-row {
+    text-align: center !important;
+}
+
 
 #contact button{
     border-radius: 0 !important;
@@ -265,7 +282,7 @@ body {
     color: inherit !important;
 }
 
-#linked {
+#linked-btn {
     background-color: #0077B5 !important;
 }
 
@@ -273,20 +290,21 @@ body {
     transform: scale(1.15) !important;
 }
 
+/* make col larger so footer will be at bottom */
+#github-col {
+    margin-bottom: 20vh !important;
+}
+
+/* Footer */
+
+
 #copyright {
-    margin-left: 15px !important;
+    padding-left: 3px !important;
+    padding-right: 5px !important;
+    padding-top: 3px !important;
+    font-size: 16px !important;
 }
 
-#footer {
-    margin-top: 110px !important;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-}
-
-#copy {
-    padding-left: 20px !important;
-    margin-top: 5px !important;
-}
 #socials i {
     font-size: 30px !important;
     padding-right: 20px !important;
