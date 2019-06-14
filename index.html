@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
-<body>
+<body onscroll="scroll();">
     <!-- NAVBAR SECTION -->
     <!-- Next steps: changes colours as it reaches different bg colours! -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Tariq Hirji</a>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="index.html" id="brand">Tariq Hirji</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills-section">Skills</a>
+                    <a class="nav-link" href="#skills-section" id="skills-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects-section">Projects</a>
+                    <a class="nav-link" href="#projects-section" id="project-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-section">About</a>
+                    <a class="nav-link" href="#about-section" id="about-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <a class="nav-link" href="#contact-section" id="contact-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -61,14 +61,14 @@
                 <!-- Right side, blurb with button -->
                 <div class="col-12 col-md-6" id="blurb">
                     <p>
-                        <!-- <code>&nbsp;&nbsp;&nbsp;</code> -->
+                        <!-- <code>&nbsp;</code> -->
                         I am a student developer at the University of Western Ontario and am currently
                         working towards an honours specialization in computer science. In my first year of university,
                         i discovered my passion for programming and immediately found many ideas of ways to apply it.
                     </p>
                     <br>
                     <p>
-                        <!-- <code>&nbsp;&nbsp;&nbsp;</code> -->
+                        <!-- <code>&nbsp;</code> -->
                         Over the course of being at university,
                         some interests I've developed include web design, computer graphics, game development and
                         artificial intelligence.
@@ -224,7 +224,7 @@
         </div>
     </section>
 
-    <a id="projects-section"></a>
+    <a id="projects-section" class="section-breakpoint"></a>
 
     <!-- PROJECTS SECTION -->
     <!-- Section title -->
@@ -321,7 +321,7 @@
         <!-- Add more projects as they are created -->
     </section>
 
-    <a id="about-section"></a>
+    <a id="about-section" class="section-breakpoint"></a>
 
     <!-- ABOUT section -->
     <section id="about">
@@ -378,7 +378,7 @@
         </div>
     </section>
 
-    <a id="contact-section"></a>
+    <a id="contact-section" class="section-breakpoint"></a>
 
     <!-- CONTACT section -->
     <section id="contact">
@@ -426,26 +426,29 @@
 
         </div>
 
-        <!-- Footer -->
+        <!-- Transparent Footer Row -->
 
         <div class="container-fluid" id="footer">
             <div class="row" id="footer-row">
-                <div class="col-6 text-left wow bounceInLeft" id="copy">
-                    <p class='d-flex align-self-end'>
+                <!-- Left column, Tariq Hirji copyright -->
+                <div class="col-6 text-left wow bounceInLeft">
+                    <p>
                         Tariq Hirji
                         <i class="far fa-copyright" id="copyright"></i>
                         2019
                     </p>
                 </div>
+
+                <!-- Right column, socials bar -->
                 <div class="col-6 text-right wow bounceInRight" id="socials">
-                    <a href="https://github.com/tariqhirji" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
+                    <a href="https://github.com/tariqhirji" target="_blank">
+                        <i class="fab fa-github social-icon"></i>
                     </a>
-                    <a href="https://www.instagram.com/tariqhirji/" target="_blank" class="social-icon">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/tariqhirji/" target="_blank">
+                        <i class="fab fa-instagram social-icon"></i>
                     </a>
-                    <a class="social-icon" target="_blank" href="#">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin social-icon"></i>
                     </a>
                 </div>
             </div>
@@ -454,11 +457,13 @@
 
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <!-- Scrolling CSS animation effect  -->
     <script>
         new WOW().init();
     </script>

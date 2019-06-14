@@ -1,51 +1,57 @@
 /* Globals */
 html {
     width: 100% !important;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 body {
     font-family: 'Roboto', sans-serif !important;
+    padding-top: 10vh;
 }
 
+
 .section-title {
-    font-family: 'Share Tech Mono', monospace !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-    padding-top: 10vh !important;
-    padding-bottom: 45px !important;
-    color: black !important;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 45px;
+    color: black;
 }
 
 /* NAVBAR */
 
 .navbar {
-    background-color: lightskyblue !important;
-    /* opacity: 0.85 !important; */
-    height: 10vh !important;
-    position: fixed !important;
-    width: 100vw !important;
+    background-color: lightskyblue;
+    opacity: 0.9;
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    transition-duration: 1.4s;
+
 }
 
 #navigation {
     /* BG colour needed to fix transparent bg, however, does not cover entire vp */
-    background-color: lightskyblue !important; 
+    background-color: lightskyblue;
+    opacity: 0.9;
+    transition-duration: 1.4s;
 }
 
 .navbar-brand {
-    color: #ffffff !important;
-    font-family: 'Share Tech Mono', monospace !important;
-    font-size: 35px !important;
-    font-weight: 300 !important;
-    padding-left: 10px !important;
+    color: #ffffff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 35px;
+    font-weight: 300;
+    padding-left: 10px;
     transition-duration: 1.4s !important;
 }
 
 .nav-link {
-    font-family: 'Share Tech Mono', monospace !important;
-    text-transform: uppercase !important;
-    color: #ffffff !important;
-    font-size: 22px !important;
-    font-weight: 300 !important;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
     transition-duration: 1.4s !important;
     padding-right: 20px !important;
 }
@@ -61,14 +67,11 @@ body {
 /* LANDING Section */
 
 #landing .container-fluid {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* JUMBOTRON  */
-body {
-    padding-top: 10vh !important;
-}
 
 .jumbotron-fluid {
     width: 100vw !important;
@@ -110,30 +113,30 @@ body {
 /* LANDING INTRO */
 
 #blurb {
-    height: 70vh !important;
-    width: 50vw !important;
-    padding: 70px 70px 0px 50px !important;
-    background-color: lightskyblue !important;
-    color: white !important;
+    height: 70vh;
+    width: 50vw;
+    padding: 70px 50px 0px 30px;
+    background-color: lightskyblue;
+    color: white;
 }
 
 #blurb h5 {
-    margin-top: 45px !important;
+    margin-top: 45px;
 }
 
 #landingbtn {
-    margin-top: 5px !important;
-    background-color: lightskyblue !important;
-    border-color: white !important;
-    color: white !important;
-    padding: 6px 10px !important;
-    margin-bottom: 30px !important;
-    transition-duration: 0.8s !important;
+    margin-top: 5px;
+    background-color: lightskyblue;
+    border-color: white;
+    color: white;
+    padding: 6px 10px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
 }
 
 #landingbtn a {
-    text-decoration: none !important;
-    color: inherit !important;
+    text-decoration: none;
+    color: inherit;
 }
 
 #landingbtn:hover {
@@ -145,11 +148,7 @@ body {
 /* SKILLS */
 
 #skills {
-    background-color: deepskyblue !important;
-}
-
-#language_card {
-    height: 308px !important;
+    background-color: deepskyblue;
 }
 
 #cards ul {
@@ -157,59 +156,54 @@ body {
 }
 
 .card {
-    font-family: 'Roboto', sans-serif !important;
-    margin-bottom: 30px !important;
-    background-color: white !important;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    background-color: white;
 }
 
 .card-title {
-    text-align: center !important;
+    text-align: center;
 }
 
 /* ICONS Sub-section */
 
 #icons .card {
     background-color: transparent !important;
-    border-color: transparent !important;
-    text-align: center !important;
+    border-color: transparent;
+    text-align: center;
 }
 
 #icons i {
-    font-size: 75px !important;
-    padding-bottom: 20px !important;
+    font-size: 75px;
+    padding-bottom: 20px;
 }
 
 /* PROJECT section */
 
 #projects .card {
-    border-color: transparent !important;
-    margin-bottom: 80px !important;
+    border-color: transparent;
+    margin-bottom: 75px !important;
 }
 
 #projects .card-text {
-    margin-left: 15px !important;
-    margin-right: 15px !important;
+    margin: 15px;
 }
 
 
 #projects .card i {
-    margin-left: 3px !important;
+    margin-left: 3px;
 }
 
 #projects button {
-    margin: 10px !important;
-    margin-top: 20px !important;
-    transition-duration: 0.3s !important;
-}
-
-#p2 {
-    list-style-position: inside !important;
+    margin: 10px;
+    margin-top: 20px;
+    transition-duration: 0.3s;
 }
 
 .badge-pill {
-    width: fit-content !important;
-    padding: 5px 15px !important;
-    margin: 5px 3px 10px 10px !important;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 5px 3px 10px 10px;
 }
 
 /* ABOUT */
@@ -225,11 +219,6 @@ body {
     position: relative !important;
 }
 
-/* Keeps all heights the same */
-.carousel-inner {
-    max-height: 100vh !important;
-}
-
 /* Carousel captions placement and styling  */
 #c1 .carousel-caption {
     margin-bottom: 300px !important;
@@ -240,72 +229,76 @@ body {
 }
 
 .carousel img {
-    height: 100vh !important;
-    width: 100vw !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Keeps all heights the same */
+.carousel-inner {
+    max-height: 100vh;
 }
 
 /* CONTACT  */
 
 #contact {
-    /* background-image: linear-gradient(to top, #87cefa, #61b7f8, #439ff4, #3685ed, #4169e1) !important; */
-    background-image: linear-gradient(to bottom, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff) !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    overflow: hidden !important;
+    background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #closing {
-    text-align: center !important;
-    font-size: 18px !important;
+    text-align: center;
+    font-size: 18px;
 }
 
 #email-row, #linked-row, #github-row {
-    text-align: center !important;
+    text-align: center;
 }
 
 
 #contact button{
-    border-radius: 0 !important;
-    padding: 5px 10px !important;
-    margin-top: 25px !important;
-    margin-bottom: 20px !important;
-    width: 300px !important;
-    transition: 1.5s !important;
+    border-radius: 0;
+    padding: 5px 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 300px;
+    transition: 1.5s;
 }
 
 #contact i {
-    margin-left: 3px !important;
+    margin-left: 3px;
 }
 
 #contact a {
-    text-decoration: none !important;
-    color: inherit !important;
+    text-decoration: none;
+    color: inherit;
 }
 
 #linked-btn {
-    background-color: #0077B5 !important;
+    background-color: #0077B5;
 }
 
 #contact button:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.20);
 }
 
 /* make col larger so footer will be at bottom */
 #github-col {
-    margin-bottom: 20vh !important;
+    margin-bottom: 19vh;
 }
 
-/* Footer */
 
+/* Footer row */
 
 #copyright {
-    padding-left: 3px !important;
-    padding-right: 5px !important;
-    padding-top: 3px !important;
-    font-size: 16px !important;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 3px;
+    font-size: 16px;
 }
 
 #socials i {
-    font-size: 30px !important;
-    padding-right: 20px !important;
+    font-size: 30px;
+    padding-right: 20px;
 }
