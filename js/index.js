@@ -53,3 +53,19 @@ function scroll() {
         navigation.style.backgroundColor = "lightskyblue";
     }
 }
+
+// Function that bounces the social icons when hovered.
+
+$(function() {
+    // Variables to hold animation start classes and animation end classes
+    var effects = 'animated bounce';
+    var effectsEnd = 'animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
+
+    // For the social-icon class, when hovered, add the classes to the icon.
+    $('i.social-icon').hover(function() {
+        // For every hover, also remove the classes once ended so that it can be hovered again.
+        $(this).addClass(effects).one(effectsEnd, function() {
+            $(this).removeClass(effects);
+        });
+    });
+});

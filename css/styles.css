@@ -26,7 +26,7 @@ body {
     height: 10vh;
     position: fixed;
     width: 100vw;
-    transition-duration: 1.4s;
+    transition-duration: 1.0s !important;
 
 }
 
@@ -34,7 +34,7 @@ body {
     /* BG colour needed to fix transparent bg, however, does not cover entire vp */
     background-color: lightskyblue;
     opacity: 0.9;
-    transition-duration: 1.4s;
+    transition-duration: 1.0s !important;
 }
 
 .navbar-brand {
@@ -43,7 +43,7 @@ body {
     font-size: 35px;
     font-weight: 300;
     padding-left: 10px;
-    transition-duration: 1.4s !important;
+    transition-duration: 1.0s !important;
 }
 
 .nav-link {
@@ -52,7 +52,7 @@ body {
     color: #ffffff;
     font-size: 22px;
     font-weight: 300;
-    transition-duration: 1.4s !important;
+    transition-duration: 1.0s !important;
     padding-right: 20px !important;
 }
 
