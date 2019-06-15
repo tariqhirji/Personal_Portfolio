@@ -56,24 +56,23 @@
             <div class="row">
                 <!-- Left side, img of me, should take up whole section of page in small -->
                 <div class="col-12 col-md-6" id="me">
-                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" />
+                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive"/>
                 </div>
                 <!-- Right side, blurb with button -->
                 <div class="col-12 col-md-6" id="blurb">
                     <p>
                         <!-- <code>&nbsp;</code> -->
-                        I am a student developer at the University of Western Ontario and am currently
-                        working towards an honours specialization in computer science. In my first year of university,
-                        i discovered my passion for programming and immediately found many ideas of ways to apply it.
-                    </p>
+                        I am a student developer at the University of Western Ontario, currently exploring opportunities in web
+                        development.
+                        In my first year of university, i discovered my passion for programming and immediately found
+                        many ideas of ways to apply it.
                     <br>
-                    <p>
+                    <br>
                         <!-- <code>&nbsp;</code> -->
                         Over the course of being at university,
                         some interests I've developed include web design, computer graphics, game development and
                         artificial intelligence.
                     </p>
-
                     <h5>Think we'd make a good team?</h5>
                     <a href="#contact-section">
                         <button type="button" class="btn btn-primary animated fadeInUp delay-2s" id="landingbtn">
@@ -180,7 +179,7 @@
                                 <h5>Quick Learner</h5>
                             </div>
                             <p class="card-text">
-                                I quickly develop new skills, while also adapting to the people I am working with. 
+                                I quickly develop new skills, while also adapting to the people I am working with.
                             </p>
                         </div>
 
@@ -213,7 +212,7 @@
                                 <h5>Innovative</h5>
                             </div>
                             <p class="card-text">
-                                I like to try new and creative ways to expand on what has already been accomplished.
+                                I like to try new, creative ways to expand on what has already been accomplished.
                             </p>
                         </div>
 
@@ -276,11 +275,13 @@
             </div>
 
 
+            <!-- EVEN # PROJECT - IMG RIGHT, TEXT LEFT, SLIDE IN LEFT -->
             <!-- Second project, reverse order of img and description -->
+
             <div class="card wow slideInLeft" data-wow-duration="2s" id="p2">
                 <div class="row no-gutters align-items-center">
                     <!-- Second half of card - DESCRIPTION -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 order-lg-1 order-2">
                         <div class="card-body">
                             <h3 class="card-title">Personal Portfolio</h3>
                             <p class="card-title text-muted"><i> Web Project</i></p>
@@ -311,7 +312,7 @@
                     </div>
 
                     <!-- First half of card - IMAGE -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 order-lg-2 order-1">
                         <img src="img/stock2.jpeg" alt="Project 1" class="card-img">
                     </div>
                 </div>
@@ -324,17 +325,18 @@
 
     <!-- ABOUT section -->
     <section id="about">
-        <!-- Carousel of about me-->
+        <!-- Carousel of images about me-->
         <div id="about-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
+
                 <!-- Slide 1 - Me -->
                 <div class="carousel-item active" id="c1">
-                    <img src="img/mariobros.gif" class="d-block w-100" alt="mario">
+                    <img src="img/mariobros.gif" class="d-flex w-100 h-100" alt="mario">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-6">
-                                    <h1 class="section-title">About:<span id="c1-title">me</span></h1>
+                                    <h1 class="carousel-title">About:<span id="c1-title">me</span></h1>
                                     <p> This is the part where I actually talk about myself and position this element.
                                         Feel free to scroll through this carousel to get to know me better.
                                         Alternatively, scroll down to find out how to contact me.
@@ -408,7 +410,7 @@
             <div class="row justify-content-center" id="linked-row">
                 <div class="col-12 align-self-center">
                     <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="linked-btn">
-                        <a href="mailto:tariqhirji15@gmail.com">Connect with me </a>
+                        <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">Connect with me </a>
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>
@@ -431,7 +433,7 @@
             <div class="row" id="footer-row">
                 <!-- Left column, Tariq Hirji copyright -->
                 <div class="col-6 text-left wow bounceInLeft">
-                    <p>
+                    <p id="copy">
                         Tariq Hirji
                         <i class="far fa-copyright" id="copyright"></i>
                         2019
@@ -446,7 +448,7 @@
                     <a href="https://www.instagram.com/tariqhirji/" target="_blank">
                         <i class="fab fa-instagram social-icon"></i>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">
                         <i class="fab fa-linkedin social-icon"></i>
                     </a>
                 </div>

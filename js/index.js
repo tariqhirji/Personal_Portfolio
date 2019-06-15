@@ -1,3 +1,4 @@
+
 // Function that changes navbar colour at different points of the page. Also highlights section colour.
 function scroll() {
     
@@ -54,7 +55,7 @@ function scroll() {
     }
 }
 
-// Function that bounces the social icons when hovered.
+// JQUERY Function that bounces the social icons when hovered.
 
 $(function() {
     // Variables to hold animation start classes and animation end classes

@@ -100,12 +100,11 @@ body {
 #me {
     width: 50vw !important;
     height: 70vh !important;
-    display: flex !important;
     padding: 0px !important;
 }
 
 #pic {
-    width: 100vw !important;
+    width: 100% !important;
     height: 70vh !important;
     padding: 0px !important;
 }
@@ -113,7 +112,7 @@ body {
 /* LANDING INTRO */
 
 #blurb {
-    height: 70vh;
+    min-height: 70vh;
     width: 50vw;
     padding: 70px 50px 0px 30px;
     background-color: lightskyblue;
@@ -213,24 +212,11 @@ body {
     height: 100vh !important;
 }
 
+/* Carousel  */
+
 #about-carousel {
     height: 100vh !important;
     width: 100vw !important;
-    position: relative !important;
-}
-
-/* Carousel captions placement and styling  */
-#c1 .carousel-caption {
-    margin-bottom: 300px !important;
-}
-
-#c1-title {
-    color: red !important;
-}
-
-.carousel img {
-    height: 100vh;
-    width: 100vw;
 }
 
 /* Keeps all heights the same */
@@ -238,10 +224,18 @@ body {
     max-height: 100vh;
 }
 
+/* Carousel captions placement and styling  */
+
+#c1-title {
+    color: red !important;
+}
+
+
 /* CONTACT  */
 
 #contact {
-    background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff);
+    /* background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff); */
+    background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -296,6 +290,12 @@ body {
     padding-right: 5px;
     padding-top: 3px;
     font-size: 16px;
+}
+
+#copy {
+    margin-bottom: 0px !important;
+    margin-top: 8px;
+
 }
 
 #socials i {
