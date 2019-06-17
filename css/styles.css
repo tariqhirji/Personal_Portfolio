@@ -1,13 +1,12 @@
 /* Globals */
 html {
     width: 100% !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 body {
     font-family: 'Roboto', sans-serif !important;
     padding-top: 10vh;
 }
-
 
 .section-title {
     font-family: 'Share Tech Mono', monospace;
@@ -22,38 +21,39 @@ body {
 
 .navbar {
     background-color: lightskyblue;
-    opacity: 0.9;
     height: 10vh;
-    position: fixed;
-    width: 100vw;
-    transition-duration: 1.0s !important;
-
-}
-
-#navigation {
-    /* BG colour needed to fix transparent bg, however, does not cover entire vp */
-    background-color: lightskyblue;
     opacity: 0.9;
-    transition-duration: 1.0s !important;
+    transition-duration: 1s !important;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
 }
 
 .navbar-brand {
-    color: #ffffff;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 35px;
-    font-weight: 300;
-    padding-left: 10px;
-    transition-duration: 1.0s !important;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    transition-duration: 1s !important;
+    padding-left: 2vw;
+}
+
+#navbarResponsive {
+    background-color: lightskyblue;
+    transition-duration: 1s !important;
+}
+
+#navbar .container-fluid {
+    padding: 0;
 }
 
 .nav-link {
-    font-family: 'Share Tech Mono', monospace;
     text-transform: uppercase;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 300;
+    color: white;
+    font-size: 1.2rem;
     transition-duration: 1.0s !important;
+    font-weight: 300;
     padding-right: 20px !important;
+    margin-left: 8px !important;
 }
 
 .nav-link:hover {
@@ -61,6 +61,15 @@ body {
 }
 
 .navbar-brand:hover {
+    color: black !important;
+}
+
+#hamburger {
+    margin-right: 2vw;
+    transition-duration: 1s !important;
+}
+
+#hamburger:hover {
     color: black !important;
 }
 
@@ -114,7 +123,9 @@ body {
 #blurb {
     min-height: 70vh;
     width: 50vw;
-    padding: 70px 50px 0px 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15vh;
     background-color: lightskyblue;
     color: white;
 }
@@ -202,7 +213,7 @@ body {
 .badge-pill {
     width: fit-content;
     padding: 5px 15px;
-    margin: 5px 3px 10px 10px;
+    margin: 5px;
 }
 
 /* ABOUT */
@@ -256,7 +267,7 @@ body {
     padding: 5px 10px;
     margin-top: 25px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 250px;
     transition: 1.5s;
 }
 

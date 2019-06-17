@@ -5,7 +5,7 @@ function scroll() {
     // Get scroll length and navbar variables
     var t = window.scrollY;
     var nav = document.getElementById("navbar");
-    var navigation = document.getElementById("navigation");
+    var navigation = document.getElementById("navbarResponsive");
 
     // variables to hold links of navbar.
     var brand = document.getElementById("brand");
@@ -13,6 +13,7 @@ function scroll() {
     var l2 = document.getElementById("project-link");
     var l3 = document.getElementById("about-link");
     var l4 = document.getElementById("contact-link");
+    var hamburger = document.getElementById("hamburger");
 
     // variables to hold sections of the page.
     var s1 = document.getElementById("skills-section");
@@ -32,6 +33,7 @@ function scroll() {
     l3.style.color = "white";
     l4.style.color = "white";
     brand.style.color = "white";
+    hamburger.style.color= "white";
 
     // Conditional that checks which section of the page the user is currently on
     if (t > t4 - 50) {
@@ -39,23 +41,24 @@ function scroll() {
     } else if (t > t3 - 50) {
         l3.style.color = "black";
         nav.style.backgroundColor = "transparent";
-        navigation.style.backgroundColor = "transparent";
+        navbarResponsive.style.backgroundColor = "transparent";
     } else if (t > t2 - 50) {
         l2.style.color = "black";
-        nav.style.backgroundColor = "#797979";
-        navigation.style.backgroundColor = "#797979";
+        nav.style.backgroundColor = "#898989";
+        navbarResponsive.style.backgroundColor = "#898989";
     } else if (t > t1 - 50) {
         l1.style.color = "black";
         nav.style.backgroundColor = "deepskyblue";
-        navigation.style.backgroundColor = "deepskyblue";
+        navbarResponsive.style.backgroundColor = "deepskyblue";
     } else {
         brand.style.color = "black";
+        hamburger.style.color = "black";
         nav.style.backgroundColor = "lightskyblue";
-        navigation.style.backgroundColor = "lightskyblue";
+        navbarResponsive.style.backgroundColor = "lightskyblue";
     }
 }
 
-// JQUERY Function that bounces the social icons when hovered.
+// JQUERY Function that bounces the SOCIALS icons when hovered.
 
 $(function() {
     // Variables to hold animation start classes and animation end classes
@@ -67,6 +70,22 @@ $(function() {
         // For every hover, also remove the classes once ended so that it can be hovered again.
         $(this).addClass(effects).one(effectsEnd, function() {
             $(this).removeClass(effects);
+        });
+    });
+});
+
+// JQUERY Function that wobbles the SKILLS icons when hovered.
+
+$(function() {
+    // Variables to hold animation start classes and animation end classes
+    var effects2 = 'animated wobble';
+    var effectsEnd = 'animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
+
+    // For the social-icon class, when hovered, add the classes to the icon.
+    $('i.skill-icon').hover(function() {
+        // For every hover, also remove the classes once ended so that it can be hovered again.
+        $(this).addClass(effects2).one(effectsEnd, function() {
+            $(this).removeClass(effects2);
         });
     });
 });

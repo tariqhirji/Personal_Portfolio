@@ -15,31 +15,34 @@
 </head>
 
 <body onscroll="scroll();">
-    <!-- NAVBAR SECTION -->
-    <!-- Next steps: changes colours as it reaches different bg colours! -->
-    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-        <a class="navbar-brand" href="index.html" id="brand">Tariq Hirji</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-            aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <!-- Dropdown menu for smaller screens -->
-        <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills-section" id="skills-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects-section" id="project-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-section" id="about-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-section" id="contact-link">Contact</a>
-                </li>
-            </ul>
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" id="brand">Tariq Hirji</a>
+            <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="toggle navigation">
+                <i class="fas fa-bars" ></i>
+            </button>
+
+            <!-- List of navbar links. Will be collapsed by button if screen is small or xsmall -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-section" id="skills-link">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects-section" id="project-link">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section" id="about-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section" id="contact-link">contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -56,18 +59,19 @@
             <div class="row">
                 <!-- Left side, img of me, should take up whole section of page in small -->
                 <div class="col-12 col-md-6" id="me">
-                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive"/>
+                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive" />
                 </div>
                 <!-- Right side, blurb with button -->
                 <div class="col-12 col-md-6" id="blurb">
                     <p>
                         <!-- <code>&nbsp;</code> -->
-                        I am a student developer at the University of Western Ontario, currently exploring opportunities in web
+                        I am a student developer at the University of Western Ontario, currently exploring opportunities
+                        in web
                         development.
                         In my first year of university, i discovered my passion for programming and immediately found
                         many ideas of ways to apply it.
-                    <br>
-                    <br>
+                        <br>
+                        <br>
                         <!-- <code>&nbsp;</code> -->
                         Over the course of being at university,
                         some interests I've developed include web design, computer graphics, game development and
@@ -106,7 +110,7 @@
                                 <i class="fas fa-code"></i>
                             </h5>
                             <ul>
-                                <li>HTML / CSS / JS</li>
+                                <li>HTML|CSS|JS</li>
                                 <li>Java</li>
                                 <li>React</li>
                                 <li>Git</li>
@@ -174,7 +178,7 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Lightning icon -->
-                            <i class="fas fa-bolt" class="card-img-top"></i>
+                            <i class="fas fa-bolt skill-icon" class="card-img-top"></i>
                             <div class="card-title">
                                 <h5>Quick Learner</h5>
                             </div>
@@ -190,7 +194,7 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Team icon -->
-                            <i class="fas fa-user-friends"></i>
+                            <i class="fas fa-user-friends skill-icon"></i>
                             <div class="card-title">
                                 <h5>Team Player</h5>
                             </div>
@@ -207,7 +211,7 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Lightbulb icon  -->
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb skill-icon"></i>
                             <div class="card-title">
                                 <h5>Innovative</h5>
                             </div>
@@ -229,11 +233,12 @@
     <section id="projects">
         <div class="container-fluid section-title">
             <h1>Projects</h1>
-            <p class="text-muted"><i>* The top project is the project I am currently working on *</i></p>
         </div>
 
         <div class="container">
             <!-- Project 1 -->
+            <!-- ODD # PROJECT - IMG LEFT, TEXT RIGHT, SLIDE IN RIGHT -->
+
             <div class="card wow slideInRight" data-wow-duration="2s" id="p1">
                 <div class="row no-gutters align-items-center">
                     <!-- First half of card - IMAGE -->
@@ -245,16 +250,18 @@
                     <div class="col-lg-5">
                         <div class="card-body">
                             <h3 class="card-title">FOREVERHERTZ</h3>
-                            <p class="card-title text-muted"><i> Ecommerce Project</i></p>
+                            <p class="card-title text-muted"><i> (WIP*) Ecommerce Project</i></p>
                             <p class="card-text">A clothing brand that uses recycled denim to create new styles out of
-                                popular bases.
-                                Pants are tappered to the clients measurements on purchase.
+                                popular base brands.
+                                <br>
+                                There is no code due to the Webflow CMS.
                             </p>
 
 
                             <!-- Badges -->
                             <span class="badge badge-pill badge-dark">Webflow CMS</span>
                             <span class="badge badge-pill badge-dark">Payment Gateway</span>
+                            <span class="badge badge-pill badge-dark">Client-Friendly</span>
                             <span class="badge badge-pill badge-dark">Responsive</span>
                             <span class="badge badge-pill badge-dark">Dynamic</span>
 
@@ -262,9 +269,9 @@
                             <div class="w-100"></div>
 
                             <!-- Button for p1 -->
-                            <button type="button" class="btn btn-outline-dark">View project</button>
+                            <button type="button" class="btn btn-secondary" disabled><del>View Project</del></button>
                             <a href="https://github.com/tariqhirji/FOREVER_HERTZ" target="_blank">
-                                <button type="button" class="btn btn-outline-dark">
+                                <button type="button" class="btn btn-outline-dark d-none">
                                     View Code
                                     <i class="fab fa-html5"></i>
                                 </button>
@@ -274,9 +281,8 @@
                 </div>
             </div>
 
-
-            <!-- EVEN # PROJECT - IMG RIGHT, TEXT LEFT, SLIDE IN LEFT -->
             <!-- Second project, reverse order of img and description -->
+            <!-- EVEN # PROJECT - IMG RIGHT, TEXT LEFT, SLIDE IN LEFT -->
 
             <div class="card wow slideInLeft" data-wow-duration="2s" id="p2">
                 <div class="row no-gutters align-items-center">
@@ -302,7 +308,7 @@
                             <div class="w-100"></div>
 
                             <!-- Buttons for p2 -->
-                            <button type="button" class="btn btn-outline-dark" disabled><del>View Project</del></button>
+                            <!-- <button type="button" class="btn btn-dark" disabled><del>View Project</del></button> -->
                             <a href="https://github.com/tariqhirji/Personal_Portfolio" target="_blank">
                                 <button type="button" class="btn btn-outline-dark">
                                     View Code <i class="fab fa-html5"></i>
@@ -331,7 +337,7 @@
 
                 <!-- Slide 1 - Me -->
                 <div class="carousel-item active" id="c1">
-                    <img src="img/mariobros.gif" class="d-flex w-100 h-100" alt="mario">
+                    <img src="img/mariobros.gif" class="d-flex h-100 w-100" alt="mario">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
@@ -410,7 +416,8 @@
             <div class="row justify-content-center" id="linked-row">
                 <div class="col-12 align-self-center">
                     <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="linked-btn">
-                        <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">Connect with me </a>
+                        <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">Connect with me
+                        </a>
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>
@@ -419,7 +426,7 @@
             <div class="row justify-content-center" id="github-row">
                 <div class="col-12 align-self-center" id="github-col">
                     <button type="button" class="btn btn-dark wow fadeInUp" data-wow-duration="1s" id="github-btn">
-                        <a href="https://github.com/tariqhirji" target="_blank">View how I document my code</a>
+                        <a href="https://github.com/tariqhirji" target="_blank">Check out my code</a>
                         <i class="fab fa-github"></i>
                     </button>
                 </div>
@@ -429,7 +436,7 @@
 
         <!-- Transparent Footer Row -->
 
-        <div class="container-fluid" id="footer">
+        <div class="container-fluid d-none d-sm-block" id="footer">
             <div class="row" id="footer-row">
                 <!-- Left column, Tariq Hirji copyright -->
                 <div class="col-6 text-left wow bounceInLeft">
