@@ -9,36 +9,40 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Share+Tech+Mono|VT323&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
-<body>
-    <!-- NAVBAR SECTION -->
-    <!-- Next steps: changes colours as it reaches different bg colours! -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Tariq Hirji</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-            aria-controls="navigaton" aria-expanded="false" aria-label="toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body onscroll="scroll();">
 
-        <!-- Dropdown menu for smaller screens -->
-        <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" id="brand">Tariq Hirji</a>
+            <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="toggle navigation">
+                <i class="fas fa-bars" ></i>
+            </button>
+
+            <!-- List of navbar links. Will be collapsed by button if screen is small or xsmall -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-section" id="skills-link">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects-section" id="project-link">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section" id="about-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section" id="contact-link">contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -46,47 +50,45 @@
     <!-- Next Step: Rotating Words -->
     <section id="landing">
         <div class="jumbotron-fluid">
-            <div class="slider-wrapper">
-                Hello
-                <div class="slider">
-                    <div class="slider-text1">rivals</div>
-                    <div class="slider-text2">partners</div>
-                    <div class="slider-text3">family</div>
-                    <div class="slider-text4">friends</div>
-                    <div class="slider-text5">World</div>
-                </div>
-                , I'm Tariq.
+            <div class="container-fluid">
+                <div class="row" id="jumbo">
+                    <div class="col-12 my-auto" id="rxtate">
+                        <h1 class="display-4 my-auto">Hello <span id="changling">World</span>, I'm Tariq Hirji.</h1>
+                    </div>
+                </div> 
             </div>
         </div>
 
             <!-- LEFT = Picture of myself, RIGHT = intro blurb w/ button -->
 
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Left side, img of me, should take up whole section of page in small -->
-                    <div class="col-12 col-lg-6" id="me">
-                        <img src="img/me.jpg" id="pic" alt="Tariq Hirji" />
-                    </div>
-                    <!-- Right side, blurb with button -->
-                    <div class="col-12 col-lg-6" id="blurb">
-                        <p>
-                            I am a student developer at the University of Western Ontario and am currently
-                            working towards an honours specialization in computer science. In my first year of
-                            university,
-                            i discovered my passion for programming and immediately found many ideas of ways to apply
-                            it.
-                        </p>
-
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left side, img of me, should take up whole section of page in small -->
+                <div class="col-12 col-md-6" id="me">
+                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive" />
+                </div>
+                <!-- Right side, blurb with button -->
+                <div class="col-12 col-md-6" id="blurb">
+                    <p>
+                        <!-- <code>&nbsp;</code> -->
+                        I am a student developer at the University of Western Ontario, currently exploring opportunities
+                        in web
+                        development.
+                        In my first year of university, i discovered my passion for programming and immediately found
+                        many ideas of ways to apply it.
                         <br>
-                        <p>
-                            Over the course of being at university,
-                            some interests I've developed include web design, computer graphics, game development and
-                            artificial intelligence.
-                        </p>
-
-                        <h5>Think we'd make a good team?</h5>
-                        <button type="button" class="btn btn-primary" id="landingbtn">Work With me</button>
-                    </div>
+                        <br>
+                        <!-- <code>&nbsp;</code> -->
+                        Over the course of being at university,
+                        some interests I've developed include web design, computer graphics, game development and
+                        artificial intelligence.
+                    </p>
+                    <h5>Think we'd make a good team?</h5>
+                    <a href="#contact-section">
+                        <button type="button" class="btn btn-primary animated fadeInUp delay-2s" id="landingbtn">
+                            Work with me
+                        </button>
+                    </a>
                 </div>
             </div>
     </section>
@@ -102,18 +104,18 @@
             <p class="text-muted"><i>* Cards are in order of most proficient to least proficient *</i></p>
         </div>
         <!-- Cards for showcasing specific categories -->
-        <div class="container-fluid" id="cards">
+        <div class="container" id="cards">
             <div class="row" id="cards">
                 <div class="col-12 col-md-4">
                     <!-- Card 1: Programming Languages -->
-                    <div class="card shadow" id="language_card">
+                    <div class="card shadow wow flipInY" id="language_card" data-wow-duration="2s">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <u>Languages</u>
                                 <i class="fas fa-code"></i>
                             </h5>
                             <ul>
-                                <li>HTML / CSS / JS</li>
+                                <li>HTML|CSS|JS</li>
                                 <li>Java</li>
                                 <li>React</li>
                                 <li>Git</li>
@@ -127,11 +129,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <!-- Card 2: Frameworks and Tools -->
-                    <div class="card shadow" id="tools_card">
+                    <!-- Card 2: Libraries and Tools -->
+                    <div class="card shadow wow flipInY" data-wow-duration="2s" id="tools_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <u>Frameworks/Tools</u>
+                                <u>Libraries/Tools</u>
                                 <i class="fas fa-tools"></i>
                             </h5>
                             <ul>
@@ -139,10 +141,10 @@
                                 <li>React.js</li>
                                 <li>JQuery</li>
                                 <li>Angular</li>
+                                <li>Animate.css</li>
                                 <li>Trello</li>
                                 <li>UML</li>
                                 <li>Figma</li>
-                                <li>JSX</li>
                                 <li>Slack</li>
                             </ul>
                         </div>
@@ -150,10 +152,10 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <!-- Card 3: Familiar Software  -->
-                    <div class="card shadow" id="software_card">
+                    <div class="card shadow wow flipInY" data-wow-duration="2s" id="software_card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <u>Familiar Software</u>
+                                <u>Usual Software</u>
                                 <i class="fas fa-desktop"></i>
                             </h5>
                             <ul>
@@ -181,13 +183,12 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Lightning icon -->
-                            <i class="fas fa-bolt" class="card-img-top"></i>
+                            <i class="fas fa-bolt skill-icon" class="card-img-top"></i>
                             <div class="card-title">
                                 <h5>Quick Learner</h5>
                             </div>
                             <p class="card-text">
-                                I quickly develops new skills, even more so if I am interested in
-                                the topic.
+                                I quickly develop new skills, while also adapting to the people I am working with.
                             </p>
                         </div>
 
@@ -198,7 +199,7 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Team icon -->
-                            <i class="fas fa-user-friends"></i>
+                            <i class="fas fa-user-friends skill-icon"></i>
                             <div class="card-title">
                                 <h5>Team Player</h5>
                             </div>
@@ -215,12 +216,12 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Lightbulb icon  -->
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb skill-icon"></i>
                             <div class="card-title">
                                 <h5>Innovative</h5>
                             </div>
                             <p class="card-text">
-                                I like to try new and creative ways to expand on what has already been accomplished.
+                                I like to try new, creative ways to expand on what has already been accomplished.
                             </p>
                         </div>
 
@@ -230,10 +231,10 @@
         </div>
     </section>
 
-    <a id="projects-section"></a>
+    <a id="projects-section" class="section-breakpoint"></a>
 
-    <!-- PROJECTS section -->
-    <!-- Next steps: adding fade in from sides for projects -->
+    <!-- PROJECTS SECTION -->
+    <!-- Section title -->
     <section id="projects">
         <div class="container-fluid section-title">
             <h1>Projects</h1>
@@ -241,8 +242,10 @@
 
         <div class="container">
             <!-- Project 1 -->
-            <div class="card" id="p1">
-                <div class="row no-gutters">
+            <!-- ODD # PROJECT - IMG LEFT, TEXT RIGHT, SLIDE IN RIGHT -->
+
+            <div class="card wow slideInRight" data-wow-duration="2s" id="p1">
+                <div class="row no-gutters align-items-center">
                     <!-- First half of card - IMAGE -->
                     <div class="col-lg-7">
                         <img src="img/stock1.jpeg" alt="Project 1" class="card-img">
@@ -251,47 +254,76 @@
                     <!-- Second half of card - DESCRIPTION -->
                     <div class="col-lg-5">
                         <div class="card-body">
-                            <h3 class="card-title">Project 1</h3>
-                            <p class="card-title text-muted"><i> Bootstrap Project</i></p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Proin vel tristique purus.
+                            <h3 class="card-title">FOREVERHERTZ</h3>
+                            <p class="card-title text-muted"><i> (WIP*) Ecommerce Project</i></p>
+                            <p class="card-text">A clothing brand that uses recycled denim to create new styles out of
+                                popular base brands.
+                                <br>
+                                All code is generated by Webflow.
                             </p>
-                            <ul class="card-text">
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
-                                <li>Point 4</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary">View project</button>
-                            <button type="button" class="btn btn-outline-info">View Code</button>
+
+
+                            <!-- Badges -->
+                            <span class="badge badge-pill badge-dark">Webflow CMS</span>
+                            <span class="badge badge-pill badge-dark">Payment Gateway</span>
+                            <span class="badge badge-pill badge-dark">Client-Friendly</span>
+                            <span class="badge badge-pill badge-dark">Responsive</span>
+                            <span class="badge badge-pill badge-dark">Dynamic</span>
+
+                            <!-- Line break -->
+                            <div class="w-100"></div>
+
+                            <!-- Button for p1 -->
+                            <button type="button" class="btn btn-secondary" disabled><del>View Project</del></button>
+                            <a href="https://github.com/tariqhirji/FOREVER_HERTZ" target="_blank">
+                                <button type="button" class="btn btn-outline-dark d-none">
+                                    View Code
+                                    <i class="fab fa-html5"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Second card, reverse order of img and description -->
-            <div class="card" id="p2">
-                <div class="row no-gutters">
+
+            <!-- Second project, reverse order of img and description -->
+            <!-- EVEN # PROJECT - IMG RIGHT, TEXT LEFT, SLIDE IN LEFT -->
+
+            <div class="card wow slideInLeft" data-wow-duration="2s" id="p2">
+                <div class="row no-gutters align-items-center">
                     <!-- Second half of card - DESCRIPTION -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 order-lg-1 order-2">
                         <div class="card-body">
-                            <h3 class="card-title">Project 2</h3>
-                            <p class="card-title text-muted"><i> Bootstrap Project</i></p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Proin vel tristique purus.
+                            <h3 class="card-title">Personal Portfolio</h3>
+                            <p class="card-title text-muted"><i> Web Project</i></p>
+                            <p class="card-text"> A portfolio to showcase my development skills and to serve as a record
+                                of
+                                all my past, present and future projects.
                             </p>
 
-                            <ul class="card-text">
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
-                                <li>Point 4</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary">View project</button>
-                            <button type="button" class="btn btn-outline-info">View Code</button>
+                            <!-- Badges -->
+                            <span class="badge badge-pill badge-dark">Bootstrap 4 grid <i
+                                    class="fab fa-bootstrap"></i></span>
+                            <span class="badge badge-pill badge-dark">CSS Animations</span>
+                            <span class="badge badge-pill badge-dark">Image Carousel</span>
+                            <span class="badge badge-pill badge-dark">Responsive</span>
+                            <span class="badge badge-pill badge-dark">Static</span>
+
+                            <!-- Line break -->
+                            <div class="w-100"></div>
+
+                            <!-- Buttons for p2 -->
+                            <!-- <button type="button" class="btn btn-dark" disabled><del>View Project</del></button> -->
+                            <a href="https://github.com/tariqhirji/Personal_Portfolio" target="_blank">
+                                <button type="button" class="btn btn-outline-dark">
+                                    View Code <i class="fab fa-html5"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
+
                     <!-- First half of card - IMAGE -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 order-lg-2 order-1">
                         <img src="img/stock2.jpeg" alt="Project 1" class="card-img">
                     </div>
                 </div>
@@ -300,17 +332,155 @@
         <!-- Add more projects as they are created -->
     </section>
 
+    <a id="about-section" class="section-breakpoint"></a>
 
-    <a href="rotatingwords.html">here I am</a>
+    <!-- ABOUT section -->
+    <section id="about">
+        <!-- Carousel of images about me-->
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 - Me -->
+                <div class="carousel-item active" id="c1">
+                    <img src="img/mariobros.gif" class="d-flex h-100 w-100" alt="mario">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="carousel-title">About:<span id="c1-title">me</span></h1>
+                                    <p> This is the part where I actually talk about myself and position this element.
+                                        Feel free to scroll through this carousel to get to know me better.
+                                        Alternatively, scroll down to find out how to contact me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 - Family -->
+                <div class="carousel-item" id="c2">
+                    <img src="img/asteroids.gif" class="d-block w-100" alt="asteroids">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+                <!-- Slide 3 - Sports -->
+                <div class="carousel-item" id="c3">
+                    <img src="img/c3.jpg" class="d-block w-100" alt="stock">
+                </div>
+                <!-- Slide 4 - Yusuf -->
+                <div class="carousel-item" id="c4">
+                    <img src="img/stock2.jpeg" class="d-block w-100" alt="another stock">
+                </div>
+                <!-- Slide 5 - Video games -->
+                <div class="carousel-item" id="c5">
+                    <img src="img/skillsbg.jpg" class="d-block w-100" alt="another stock">
+                </div>
+            </div>
+
+            <!-- Carousel previous button -->
+            <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <!-- Carousel next button -->
+            <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <a id="contact-section" class="section-breakpoint"></a>
+
+    <!-- CONTACT section -->
+    <section id="contact">
+        <div class="container-fluid" id="contact-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="section-title">Contact</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="closing">
+                <div class="col-lg-6 col-12 align-self-center">
+                    <p>Want my help on a project of yours?
+                        Want to see what my programming skills are like? Feel free to reach out.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="email-row">
+                <div class="col-12 align-self-center">
+                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="email-btn">
+                        <a href="mailto:tariqhirji15@gmail.com">Send me an email </a>
+                        <i class="far fa-envelope-open"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="linked-row">
+                <div class="col-12 align-self-center">
+                    <button type="button" class="btn btn-info wow fadeInUp" data-wow-duration="1s" id="linked-btn">
+                        <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">Connect with me
+                        </a>
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="github-row">
+                <div class="col-12 align-self-center" id="github-col">
+                    <button type="button" class="btn btn-dark wow fadeInUp" data-wow-duration="1s" id="github-btn">
+                        <a href="https://github.com/tariqhirji" target="_blank">Check out my code</a>
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Transparent Footer Row -->
+
+        <div class="container-fluid d-none d-sm-block" id="footer">
+            <div class="row" id="footer-row">
+                <!-- Left column, Tariq Hirji copyright -->
+                <div class="col-6 text-left wow bounceInLeft">
+                    <p id="copy">
+                        Tariq Hirji
+                        <i class="far fa-copyright" id="copyright"></i>
+                        2019
+                    </p>
+                </div>
+
+                <!-- Right column, socials bar -->
+                <div class="col-6 text-right wow bounceInRight" id="socials">
+                    <a href="https://github.com/tariqhirji" target="_blank">
+                        <i class="fab fa-github social-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tariqhirji/" target="_blank">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tariq-hirji-272295189/" target="_blank">
+                        <i class="fab fa-linkedin social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- Minified file of scrolling animation library to go with Animate.css -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <!-- Scrolling CSS animation effect Initializer -->
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
