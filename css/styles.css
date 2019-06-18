@@ -83,22 +83,29 @@ body {
 /* JUMBOTRON  */
 
 .jumbotron-fluid {
-    width: 100vw !important;
-    color: white !important;
-    opacity: 0.87 !important;
+    width: 100vw;
+    color: white;
+    opacity: 0.9;
     background-image: linear-gradient(to right, #484848, #555555, #636363, #717171, #808080);
     font-family: 'VT323', monospace !important;
-    height: 20vh !important;
-    line-height: 150px !important;
-    text-align: center !important;
+    min-height: 20vh;
+    text-align: center;
 }
 
-.jumbotron-fluid h3 {
-    font-size: 55px !important;
-    display: inline-block !important;
-    vertical-align: middle !important;
-    letter-spacing: 5px !important;
+#jumbo {
+    min-height: 20vh !important;
 }
+#rxtate {
+    width: 100vw !important;
+}
+
+.jumbotron-fluid slider-wrapper {
+    letter-spacing: 3px;
+    padding: 0px;
+    text-align: center;
+    font-size: 50px !important;
+}
+
 
 #changling {
     color: #828282 !important;
