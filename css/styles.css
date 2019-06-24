@@ -39,7 +39,7 @@ body {
 
 #navbarResponsive {
     background-color: lightskyblue;
-    transition-duration: 1s !important;
+    transition-duration: 1s;
 }
 
 #navbar .container-fluid {
@@ -65,7 +65,7 @@ body {
 }
 
 #hamburger {
-    margin-right: 2vw;
+    margin-right: 5vw;
     transition-duration: 1s !important;
 }
 
@@ -74,18 +74,13 @@ body {
 }
 
 /* LANDING Section */
-
-#landing .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 /* Rotating text */
 
+/* Makeshift jumbotron without jumbotron formatting */
 .content {
     width: 100vw;
-    background-image: linear-gradient(to right, #4f4f4f, #5d5d5d, #6c6c6c, #7b7b7b, #8b8b8b);
-    min-height: 20vh;
+    background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080);
+    height: 20vh;
 }
 
 .slider-wrapper {
@@ -94,16 +89,19 @@ body {
     font-family: 'VT323', monospace;
 }
 
+/* Hide overflow and set masking div height */
 .slider {
     height: 75px;
-    padding-left: 10px;
+    padding-left: 15px;
     overflow: hidden;
 }
 
+/* Run animation */
 .slider-text1 {
     animation: slide 10s linear infinite;
 }
 
+/* Set height and margin bottom to slide up */
 .slider div {
     color: lightskyblue;
     height: 75px;
@@ -112,6 +110,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Slide animation */
 @keyframes slide {
     0% {margin-top: -750px;}
     5% {margin-top: -600px;}
@@ -126,45 +125,14 @@ body {
     100% {margin-top: 0px;}
 }
 
-
-
-
-
-/* #jumbo {
-    min-height: 20vh;
-    width: 100vw;
-    background-image: linear-gradient(to right, #4f4f4f, #5d5d5d, #6c6c6c, #7b7b7b, #8b8b8b);
-    margin: 0px; 
-    font-size: 55px;
+#scrolldown {
+    background: transparent;
 }
 
-.slider-wrapper {
-    font-family: 'VT323', monospace;
-    color: white;
-    font-size: 50px;
+#landing .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
-.slider {
-    padding-left: 20px;
-    height: 60px;
-    overflow: hidden;
-}
-
-.slider-text {
-    color: lightskyblue;
-}
-
-.slider div {
-    height: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-    padding: 5px 15px;
-    text-align: center;
-    box-sizing: border-box;
-}  */
-
-
-
 
 /* LANDING IMG */
 
@@ -183,17 +151,16 @@ body {
 /* LANDING INTRO */
 
 #blurb {
-    min-height: 70vh;
+    flex-direction: column;
+    height: 70vh;
     width: 50vw;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 15vh;
+    padding: 0px 30px;
     background-color: lightskyblue;
     color: white;
 }
 
 #blurb h5 {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 #landingbtn {
