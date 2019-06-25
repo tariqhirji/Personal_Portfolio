@@ -57,7 +57,7 @@
                 <div class="slider">
                     <!-- BOTTOM IS STARTING TEXT -->
                     <div class="slider-text1">stalkers</div>
-                    <div class="slider-text2">employers</div>
+                    <div class="slider-text2">enemies</div>
                     <div class="slider-text3">family</div>
                     <div class="slider-text4">friends</div>
                     <div class="slider-text5">World</div>
@@ -73,29 +73,50 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Left side, img of me, should take up whole section of page in small -->
-                <div class="col-12 col-md-6" id="me">
-                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive"/>
+                <div class="col-12 col-sm-6" id="me">
+                    <img src="img/me.jpg" id="pic" alt="Tariq Hirji" class="img-responsive" />
                 </div>
                 <!-- Right side, blurb with button -->
-                <div class="col-12 col-md-6 d-flex justify-content-center" id="blurb">
+                <div class="col-12 col-sm-6 d-flex justify-content-center" id="blurb">
                     <p>
                         I am a student developer at the University of Western Ontario, currently exploring opportunities
                         in web
                         development.
-                        In my first year of university, i discovered my passion for programming and immediately found
+                        In my first year of university, I discovered my passion for programming and immediately found
                         many ideas of ways to apply it.
                         <br>
                         <br>
                         Over the course of being at university,
-                        some interests I've developed include web design, computer graphics, game development and
+                        some interests I've developed include web design, game development and
                         artificial intelligence.
                     </p>
-                    <h5>Think we'd make a good team?</h5>
-                    <a href="#contact-section">
+
+
+                    <!-- <a href="https://github.com/tariqhirji" target="_blank">
+                        <button type="button" class="btn btn-dark animated fadeInUp delay-2s">
+                            Check out my Github <i class="fab fa-github"></i>
+                        </button> 
+                    </a> -->
+                    <!-- <a href="github.com">
                         <button type="button" class="btn btn-primary animated fadeInUp delay-2s" id="landingbtn">
-                            Work with me
+                            Check out my Github 
                         </button>
-                    </a>
+                    </a> -->
+
+                    <!-- Call to action -->
+                    <div id="cta" class="d-none d-md-block">
+                        <h5>Want to see what I'm working on?</h5>
+                        <h4 id="options">
+                            <!-- Github option -->
+                            <a href="https://github.com/tariqhirji" target="_blank">
+                                <i class="fab fa-github" id="gitoption"></i>
+                            </a>
+                            <!-- Divider --> |
+                            <!-- End of Divider-->
+                            <!-- Scroll option -->
+                            <i class="fas fa-angle-double-down animated bounce slow infinite" id="scrolloption"></i>
+                        </h4>
+                    </div>
                 </div>
             </div>
     </section>

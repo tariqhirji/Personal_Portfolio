@@ -98,7 +98,7 @@ body {
 
 /* Run animation */
 .slider-text1 {
-    animation: slide 10s linear infinite;
+    animation: slide 6s linear infinite;
 }
 
 /* Set height and margin bottom to slide up */
@@ -125,8 +125,11 @@ body {
     100% {margin-top: 0px;}
 }
 
-#scrolldown {
-    background: transparent;
+
+#plzscroll {
+    padding-left: 50%;
+    padding-top: 1000px;
+    font-size: 50px;
 }
 
 #landing .container-fluid {
@@ -163,25 +166,33 @@ body {
     margin-top: 15px;
 }
 
-#landingbtn {
-    margin-top: 5px;
-    background-color: lightskyblue;
-    border-color: white;
-    color: white;
-    padding: 6px 10px;
-    margin-bottom: 30px;
-    transition-duration: 0.5s;
+#options {
+    padding-left: 25%;
+    padding-top: 10%;
+    font-size: 80px;
 }
 
-#landingbtn a {
+#options a {
     text-decoration: none;
     color: inherit;
 }
 
-#landingbtn:hover {
-    color: lightskyblue !important;
-    border-color: lightskyblue !important;
-    background-color: white !important;
+#gitoption {
+    transition-duration: 1s;
+    padding-right: 30px;
+}
+
+#gitoption:hover {
+    color:#343a40;
+}
+
+#scrolloption {
+    transition-duration: 1s;
+    padding-left: 30px;
+}
+
+#scrolloption:hover {
+    color: #343a40;
 }
 
 /* SKILLS */
