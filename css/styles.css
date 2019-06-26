@@ -39,7 +39,7 @@ body {
 
 #navbarResponsive {
     background-color: lightskyblue;
-    transition-duration: 1s !important;
+    transition-duration: 1s;
 }
 
 #navbar .container-fluid {
@@ -65,7 +65,7 @@ body {
 }
 
 #hamburger {
-    margin-right: 2vw;
+    margin-right: 5vw;
     transition-duration: 1s !important;
 }
 
@@ -74,41 +74,67 @@ body {
 }
 
 /* LANDING Section */
+/* Rotating text */
+
+/* Makeshift jumbotron without jumbotron formatting */
+.content {
+    width: 100vw;
+    background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080);
+    height: 20vh;
+}
+
+.slider-wrapper {
+    font-size: 50px;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+/* Hide overflow and set masking div height */
+.slider {
+    height: 75px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+/* Run animation */
+.slider-text1 {
+    animation: slide 6s linear infinite;
+}
+
+/* Set height and margin bottom to slide up */
+.slider div {
+    color: lightskyblue;
+    height: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Slide animation */
+@keyframes slide {
+    0% {margin-top: -750px;}
+    5% {margin-top: -600px;}
+    20% {margin-top: -600px;}
+    25% {margin-top: -450px;}
+    40% {margin-top: -450px;}
+    45% {margin-top: -300px;}
+    60% {margin-top: -300px;}
+    65% {margin-top: -150px;}
+    80% {margin-top: -150px;}
+    85% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+
+
+#plzscroll {
+    padding-left: 50%;
+    padding-top: 1000px;
+    font-size: 50px;
+}
 
 #landing .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
-}
-
-/* JUMBOTRON  */
-
-.jumbotron-fluid {
-    width: 100vw;
-    color: white;
-    opacity: 0.9;
-    background-image: linear-gradient(to right, #484848, #555555, #636363, #717171, #808080);
-    font-family: 'VT323', monospace !important;
-    min-height: 20vh;
-    text-align: center;
-}
-
-#jumbo {
-    min-height: 20vh !important;
-}
-#rxtate {
-    width: 100vw !important;
-}
-
-.jumbotron-fluid slider-wrapper {
-    letter-spacing: 3px;
-    padding: 0px;
-    text-align: center;
-    font-size: 50px !important;
-}
-
-
-#changling {
-    color: #828282 !important;
 }
 
 /* LANDING IMG */
@@ -128,38 +154,45 @@ body {
 /* LANDING INTRO */
 
 #blurb {
-    min-height: 70vh;
+    flex-direction: column;
+    height: 70vh;
     width: 50vw;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 15vh;
+    padding: 0px 30px;
     background-color: lightskyblue;
     color: white;
 }
 
 #blurb h5 {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
-#landingbtn {
-    margin-top: 5px;
-    background-color: lightskyblue;
-    border-color: white;
-    color: white;
-    padding: 6px 10px;
-    margin-bottom: 30px;
-    transition-duration: 0.5s;
+#options {
+    padding-left: 25%;
+    padding-top: 10%;
+    font-size: 80px;
 }
 
-#landingbtn a {
+#options a {
     text-decoration: none;
     color: inherit;
 }
 
-#landingbtn:hover {
-    color: lightskyblue !important;
-    border-color: lightskyblue !important;
-    background-color: white !important;
+#gitoption {
+    transition-duration: 1s;
+    padding-right: 30px;
+}
+
+#gitoption:hover {
+    color:#343a40;
+}
+
+#scrolloption {
+    transition-duration: 1s;
+    padding-left: 30px;
+}
+
+#scrolloption:hover {
+    color: #343a40;
 }
 
 /* SKILLS */
