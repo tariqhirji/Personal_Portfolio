@@ -53,8 +53,8 @@ function scroll() {
     } else {
         brand.style.color = "black";
         hamburger.style.color = "black";
-        nav.style.backgroundColor = "lightskyblue";
-        navbarResponsive.style.backgroundColor = "lightskyblue";
+        nav.style.backgroundColor = "#48D1CC";
+        navbarResponsive.style.backgroundColor = "#48D1CC";
     }
 }
 
