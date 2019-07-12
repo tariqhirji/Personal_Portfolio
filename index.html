@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills-section" id="skills-link">skills</a>
+                        <a data-scroll href="#skills-section" id="skills-link" class="nav-link">skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects-section" id="project-link">projects</a>
@@ -153,11 +153,11 @@
                                 <i class="fas fa-tools"></i>
                             </h5>
                             <ul>
-                                <li>Bootstrap 4.0</li>
+                                <li>Bootstrap 4</li>
                                 <li>React.js</li>
                                 <li>JQuery</li>
-                                <li>Angular</li>
                                 <li>Animate.css</li>
+                                <li>Angular</li>
                                 <li>Trello</li>
                                 <li>UML</li>
                                 <li>Figma</li>
@@ -177,12 +177,12 @@
                             <ul>
                                 <li>VSCode</li>
                                 <li>Eclipse</li>
-                                <li>Adobe Photoshop</li>
+                                <li>Microsoft Office</li>
                                 <li>Adobe XD</li>
+                                <li>Adobe Photoshop</li>
                                 <li>IntelliJ</li>
                                 <li>RStudio</li>
                                 <li>PyCharm</li>
-                                <li>Microsoft Office</li>
                                 <li>Xcode</li>
                             </ul>
                         </div>
@@ -204,7 +204,7 @@
                                 <h5>Quick Learner</h5>
                             </div>
                             <p class="card-text">
-                                I quickly develop new skills, while also adapting to the people I am working with.
+                                I quickly develop new skills, while also being able to adapt to new environments.
                             </p>
                         </div>
 
@@ -321,7 +321,7 @@
                             <span class="badge badge-pill badge-dark">Bootstrap 4 grid <i
                                     class="fab fa-bootstrap"></i></span>
                             <span class="badge badge-pill badge-dark">CSS Animations</span>
-                            <span class="badge badge-pill badge-dark">Hero Section</span>
+                            <!-- <span class="badge badge-pill badge-dark">Hero Section</span> -->
                             <span class="badge badge-pill badge-dark">Responsive</span>
                             <span class="badge badge-pill badge-dark">Static</span>
 
@@ -350,65 +350,25 @@
 
     <a id="about-section" class="section-breakpoint"></a>
 
-    <!-- ABOUT section -->
+    <!-- ABOUT SECTION -->
     <section id="about">
-        <!-- Carousel of images about me-->
-        <div id="about-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-
-                <!-- Slide 1 - Me -->
-                <div class="carousel-item active" id="c1">
-                    <img src="img/mariobros.gif" class="d-flex h-100 w-100" alt="mario">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h1 class="carousel-title">About:<span id="c1-title">me</span></h1>
-                                    <p> This is the part where I actually talk about myself and position this element.
-                                        Feel free to scroll through this carousel to get to know me better.
-                                        Alternatively, scroll down to find out how to contact me.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 2 - Family -->
-                <div class="carousel-item" id="c2">
-                    <img src="img/asteroids.gif" class="d-block w-100" alt="asteroids">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-                <!-- Slide 3 - Sports -->
-                <div class="carousel-item" id="c3">
-                    <img src="img/c3.jpg" class="d-block w-100" alt="stock">
-                </div>
-                <!-- Slide 4 - Yusuf -->
-                <div class="carousel-item" id="c4">
-                    <img src="img/stock2.jpeg" class="d-block w-100" alt="another stock">
-                </div>
-                <!-- Slide 5 - Video games -->
-                <div class="carousel-item" id="c5">
-                    <img src="img/skillsbg.jpg" class="d-block w-100" alt="another stock">
-                </div>
+        <div class="hero">
+            <div class="hero-msg">
+                <h2>Things I'm a really big fan of:</h2>
+                <ul>
+                    <li>Technology</li>
+                    <li>Traveling</li>
+                    <li>Sports</li>
+                    <li>Video Games</li>
+                    <li></li>
+                </ul>
             </div>
-
-            <!-- Carousel previous button -->
-            <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <!-- Carousel next button -->
-            <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </section>
 
     <a id="contact-section" class="section-breakpoint"></a>
 
-    <!-- CONTACT section -->
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <div class="container-fluid" id="contact-container">
             <div class="row">
@@ -490,6 +450,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
     <!-- Minified file of scrolling animation library to go with Animate.css -->
     <script type="text/javascript" src="js/wow.min.js"></script>
 

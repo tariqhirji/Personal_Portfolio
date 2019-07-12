@@ -1,7 +1,6 @@
-
 // Function that changes navbar colour at different points of the page. Also highlights section colour.
 function scroll() {
-    
+
     // Get scroll length and navbar variables
     var t = window.scrollY;
     var nav = document.getElementById("navbar");
@@ -33,7 +32,7 @@ function scroll() {
     l3.style.color = "white";
     l4.style.color = "white";
     brand.style.color = "white";
-    hamburger.style.color= "white";
+    hamburger.style.color = "white";
 
     // Conditional that checks which section of the page the user is currently on
     if (t > t4 - 50) {
@@ -41,7 +40,7 @@ function scroll() {
     } else if (t > t3 - 50) {
         l3.style.color = "black";
         nav.style.backgroundColor = "transparent";
-        navbarResponsive.style.backgroundColor = "transparent";
+        navbarResponsive.style.backgroundColor = "#transparent";
     } else if (t > t2 - 50) {
         l2.style.color = "black";
         nav.style.backgroundColor = "#898989";
@@ -59,33 +58,41 @@ function scroll() {
 }
 
 // JQUERY Function that bounces the SOCIALS icons when hovered.
-
-$(function() {
+$(function () {
     // Variables to hold animation start classes and animation end classes
     var effects = 'animated bounce';
     var effectsEnd = 'animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
 
     // For the social-icon class, when hovered, add the classes to the icon.
-    $('i.social-icon').hover(function() {
+    $('i.social-icon').hover(function () {
         // For every hover, also remove the classes once ended so that it can be hovered again.
-        $(this).addClass(effects).one(effectsEnd, function() {
+        $(this).addClass(effects).one(effectsEnd, function () {
             $(this).removeClass(effects);
         });
     });
 });
 
-// JQUERY Function that wobbles the SKILLS icons when hovered.
 
-$(function() {
+// JQUERY Function that wobbles the SKILLS icons when hovered.
+$(function () {
     // Variables to hold animation start classes and animation end classes
     var effects2 = 'animated wobble';
     var effectsEnd = 'animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
 
     // For the social-icon class, when hovered, add the classes to the icon.
-    $('i.skill-icon').hover(function() {
+    $('i.skill-icon').hover(function () {
         // For every hover, also remove the classes once ended so that it can be hovered again.
-        $(this).addClass(effects2).one(effectsEnd, function() {
+        $(this).addClass(effects2).one(effectsEnd, function () {
             $(this).removeClass(effects2);
         });
     });
 });
+
+
+// Function that changes bg color of navbar to transparent in the event that the user 
+// clicks on the contact link and was on a bg color (Was not changing if not scrolled.)
+$(function () {
+    $('#contact-link').click(function () {
+        $('#navbar').css('background-color', 'transparent');
+    });
+})
