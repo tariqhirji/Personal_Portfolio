@@ -6,6 +6,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif !important;
     padding-top: 10vh;
+    /* background-image: linear-gradient(to bottom, #00bfff, #8acbff, #c1d9ff, #e6eaff, #ffffff); */
+
 }
 
 .section-title {
@@ -20,7 +22,7 @@ body {
 /* NAVBAR */
 
 .navbar {
-    background-color: #48D1CC;
+    background-color: #87CEFA;
     height: 10vh;
     opacity: 0.9;
     transition-duration: 1s !important;
@@ -44,7 +46,7 @@ body {
 }
 
 #navbarResponsive {
-    background-color: #48D1CC;
+    background-color: #87CEFA;
     transition-duration: 1s;
 }
 
@@ -55,6 +57,7 @@ body {
 .nav-link {
     text-transform: uppercase;
     color: white;
+    background-color: transparent;
     font-size: 1.2rem;
     transition-duration: 1.0s !important;
     font-weight: 300;
@@ -85,7 +88,9 @@ body {
 /* Makeshift jumbotron without jumbotron formatting */
 .content {
     width: 100vw;
-    background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080);
+    /* background-image: linear-gradient(to bottom, #00bfff, #43c3fe, #5fc6fd, #75cafb, #87cefa); */
+    background-color: #67737A;
+    /* background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080); */
     height: 20vh;
 }
 
@@ -109,7 +114,7 @@ body {
 
 /* Set height and margin bottom to slide up */
 .slider div {
-    color: deepskyblue;
+    color: #87CEFA;
     height: 75px;
     margin-bottom: 75px;
     text-align: center;
@@ -156,9 +161,12 @@ body {
     flex-direction: column;
     height: 70vh;
     width: 50vw;
-    padding: 0px 30px;
-    background-color: #48D1CC;
+    padding-top: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color:#87CEFA;
     color: white;
+    overflow: scroll;
 }
 
 #blurb h5 {
@@ -197,7 +205,7 @@ body {
 /* SKILLS */
 
 #skills {
-    background-color: deepskyblue;
+    background-color: #6BA4C7;
 }
 
 #cards ul {
@@ -228,6 +236,10 @@ body {
 }
 
 /* PROJECT section */
+
+#projects {
+    background-color: #FFFFFF;
+}
 
 #projects .card {
     border-color: transparent;
@@ -272,7 +284,7 @@ body {
 }
 
 .hero::before {
-    background-image: url(/img/pacman.gif);
+    /* background-image: url(/img/pacman.gif); */
     background-size: cover;
     content: "";
     display: block;
@@ -286,7 +298,7 @@ body {
 }
 
 .hero::after {
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
     content: "";
     display: block;
     position: absolute;
@@ -315,7 +327,7 @@ body {
 
 #contact {
     /* background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff); */
-    background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff);
+    /* background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff); */
     width: 100vw;
     height: 100vh;
     overflow: hidden;

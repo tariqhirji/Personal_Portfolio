@@ -40,20 +40,20 @@ function scroll() {
     } else if (t > t3 - 50) {
         l3.style.color = "black";
         nav.style.backgroundColor = "transparent";
-        navbarResponsive.style.backgroundColor = "#transparent";
+        navbarResponsive.style.backgroundColor = "transparent";
     } else if (t > t2 - 50) {
         l2.style.color = "black";
         nav.style.backgroundColor = "#898989";
         navbarResponsive.style.backgroundColor = "#898989";
     } else if (t > t1 - 50) {
         l1.style.color = "black";
-        nav.style.backgroundColor = "deepskyblue";
-        navbarResponsive.style.backgroundColor = "deepskyblue";
+        nav.style.backgroundColor = "#6BA4C7";
+        navbarResponsive.style.backgroundColor = "#6BA4C7";
     } else {
         brand.style.color = "black";
         hamburger.style.color = "black";
-        nav.style.backgroundColor = "#48D1CC";
-        navbarResponsive.style.backgroundColor = "#48D1CC";
+        nav.style.backgroundColor = "#87CEFA";
+        navbarResponsive.style.backgroundColor = "#87CEFA";
     }
 }
 
