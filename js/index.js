@@ -47,13 +47,13 @@ function scroll() {
         navbarResponsive.style.backgroundColor = "#898989";
     } else if (t > t1 - 50) {
         l1.style.color = "black";
-        nav.style.backgroundColor = "#6BA4C7";
-        navbarResponsive.style.backgroundColor = "#6BA4C7";
+        nav.style.backgroundColor = "#87CEFA";
+        navbarResponsive.style.backgroundColor = "#87CEFA";
     } else {
         brand.style.color = "black";
         hamburger.style.color = "black";
-        nav.style.backgroundColor = "#87CEFA";
-        navbarResponsive.style.backgroundColor = "#87CEFA";
+        nav.style.backgroundColor = "#6BA4C7";
+        navbarResponsive.style.backgroundColor = "#6BA4C7";
     }
 }
 

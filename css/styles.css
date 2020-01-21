@@ -22,7 +22,7 @@ body {
 /* NAVBAR */
 
 .navbar {
-    background-color: #87CEFA;
+    background-color: #6BA4C7;
     height: 10vh;
     opacity: 0.9;
     transition-duration: 1s !important;
@@ -46,7 +46,7 @@ body {
 }
 
 #navbarResponsive {
-    background-color: #87CEFA;
+    background-color: #6BA4C7;
     transition-duration: 1s;
 }
 
@@ -164,7 +164,8 @@ body {
     padding-top: 5%;
     padding-right: 20px;
     padding-left: 20px;
-    background-color:#87CEFA;
+    background-color: #6BA4C7;
+    /* background-color:#87CEFA; */
     color: white;
     overflow: scroll;
 }
@@ -205,7 +206,8 @@ body {
 /* SKILLS */
 
 #skills {
-    background-color: #6BA4C7;
+    /* background-color: #6BA4C7; */
+    background-color:#87CEFA;
 }
 
 #cards ul {
