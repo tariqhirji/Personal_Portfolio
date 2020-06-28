@@ -35,6 +35,7 @@ function scroll() {
     hamburger.style.color = "white";
 
     // Conditional that checks which section of the page the user is currently on
+    // Less 50px to account for transition animation time of 1s 
     if (t > t4 - 50) {
         l4.style.color = "black";
     } else if (t > t3 - 50) {
@@ -43,12 +44,12 @@ function scroll() {
         navbarResponsive.style.backgroundColor = "transparent";
     } else if (t > t2 - 50) {
         l2.style.color = "black";
-        nav.style.backgroundColor = "#898989";
-        navbarResponsive.style.backgroundColor = "#898989";
+        nav.style.backgroundColor = "#CAF0F8";
+        navbarResponsive.style.backgroundColor = "#CAF0F8";
     } else if (t > t1 - 50) {
         l1.style.color = "black";
-        nav.style.backgroundColor = "#87CEFA";
-        navbarResponsive.style.backgroundColor = "#87CEFA";
+        nav.style.backgroundColor = "#90E0EF";
+        navbarResponsive.style.backgroundColor = "#90E0EF";
     } else {
         brand.style.color = "black";
         hamburger.style.color = "black";

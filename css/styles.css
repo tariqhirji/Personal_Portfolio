@@ -6,8 +6,6 @@ html {
 body {
     font-family: 'Roboto', sans-serif !important;
     padding-top: 10vh;
-    /* background-image: linear-gradient(to bottom, #00bfff, #8acbff, #c1d9ff, #e6eaff, #ffffff); */
-
 }
 
 .section-title {
@@ -22,6 +20,7 @@ body {
 /* NAVBAR */
 
 .navbar {
+    /* background-color: #6BA4C7; */
     background-color: #6BA4C7;
     height: 10vh;
     opacity: 0.9;
@@ -88,9 +87,8 @@ body {
 /* Makeshift jumbotron without jumbotron formatting */
 .content {
     width: 100vw;
-    /* background-image: linear-gradient(to bottom, #00bfff, #43c3fe, #5fc6fd, #75cafb, #87cefa); */
-    background-color: #67737A;
-    /* background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080); */
+    /* background-color: #67737A; */
+    background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080);
     height: 20vh;
 }
 
@@ -114,7 +112,7 @@ body {
 
 /* Set height and margin bottom to slide up */
 .slider div {
-    color: #87CEFA;
+    color: #00B4D8;
     height: 75px;
     margin-bottom: 75px;
     text-align: center;
@@ -167,7 +165,6 @@ body {
     background-color: #6BA4C7;
     /* background-color:#87CEFA; */
     color: white;
-    overflow: scroll;
 }
 
 #blurb h5 {
@@ -207,7 +204,9 @@ body {
 
 #skills {
     /* background-color: #6BA4C7; */
-    background-color:#87CEFA;
+    background-color: #90e0ef;
+    min-height: 100vh;
+    /* background-color:#87CEFA; */
 }
 
 #cards ul {
@@ -240,7 +239,9 @@ body {
 /* PROJECT section */
 
 #projects {
-    background-color: #FFFFFF;
+    background-color: #caf0f8;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 #projects .card {
@@ -329,7 +330,7 @@ body {
 
 #contact {
     /* background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff); */
-    /* background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff); */
+    background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
