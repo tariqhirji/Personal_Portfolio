@@ -185,9 +185,9 @@ body {
 /* SKILLS */
 
 #skills {
-    background-color: #90e0ef;
+    /* background-color: #90e0ef; */
     min-height: 100vh;
-    /* background-color:#87CEFA; */
+    background-color:#87CEFA;
 }
 
 #cards ul {
@@ -220,9 +220,11 @@ body {
 /* PROJECT section */
 
 #projects {
-    background-color: #caf0f8;
+    /* background-color: #caf0f8; */
+    background-color: #90e0ef;
     min-height: 100vh;
     height: fit-content;
+    padding-bottom: 25px;
 }
 
 #projects .card {
