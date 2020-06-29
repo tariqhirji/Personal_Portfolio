@@ -20,7 +20,6 @@ body {
 /* NAVBAR */
 
 .navbar {
-    /* background-color: #6BA4C7; */
     background-color: #6BA4C7;
     height: 10vh;
     opacity: 0.9;
@@ -35,9 +34,10 @@ body {
     font-size: 2rem;
     font-weight: 500;
     transition-duration: 1s !important;
-    padding-left: 2vw;
+    padding-left: 3vw;
 }
 
+/* Set navbar links to only have a coloured bg if in md screen with dropdown button */
 @media (min-width: 768px) {
     #navbarResponsive {
         background-color: transparent !important;
@@ -47,10 +47,6 @@ body {
 #navbarResponsive {
     background-color: #6BA4C7;
     transition-duration: 1s;
-}
-
-#navbar .container-fluid {
-    padding: 0;
 }
 
 .nav-link {
@@ -82,23 +78,25 @@ body {
 }
 
 /* LANDING Section */
-/* Rotating text */
 
-/* Makeshift jumbotron without jumbotron formatting */
+#landing {
+    min-height: 90vh;
+}
+
+/* Rotating text on simple jumbotron*/
 .content {
     width: 100vw;
-    /* background-color: #67737A; */
     background-image: linear-gradient(to right, #4d4d4d, #595959, #666666, #737373, #808080);
     height: 20vh;
 }
-
+/* Surrounding text from rotating words */
 .slider-wrapper {
     font-size: 50px;
     color: white;
     font-family: 'VT323', monospace;
 }
 
-/* Hide overflow and set masking div height */
+/* Hide overflow and set masking div height to hide other words*/
 .slider {
     height: 75px;
     padding-left: 20px;
@@ -110,9 +108,10 @@ body {
     animation: slide 10s linear infinite;
 }
 
-/* Set height and margin bottom to slide up */
+/* Set height and margin bottom to slide up to iterate over words*/
 .slider div {
-    color: #00B4D8;
+    color: deepskyblue;
+    /* color: #00B4D8; */
     height: 75px;
     margin-bottom: 75px;
     text-align: center;
@@ -141,39 +140,27 @@ body {
 
 /* LANDING IMG */
 
-#me {
-    width: 50vw !important;
-    height: 70vh !important;
-    padding: 0px !important;
+#landing-pic {
+    width: 50vw;
+    height: 70vh;
+    padding: 0px;
 }
 
-#pic {
-    width: 100% !important;
-    height: 70vh !important;
-    padding: 0px !important;
+#me {
+    width: 100%;
+    height: 100%;
 }
 
 /* LANDING INTRO */
 
 #blurb {
-    flex-direction: column;
     height: 70vh;
     width: 50vw;
-    padding-top: 5%;
-    padding-right: 20px;
-    padding-left: 20px;
     background-color: #6BA4C7;
-    /* background-color:#87CEFA; */
     color: white;
 }
 
-#blurb h5 {
-    margin-top: 15px;
-}
-
 #options {
-    padding-left: 25%;
-    padding-top: 7%;
     font-size: 60px;
 }
 
@@ -182,28 +169,22 @@ body {
     color: inherit;
 }
 
-#gitoption {
+#options i:hover {
     transition-duration: 1s;
-    padding-right: 30px;
-}
-
-#gitoption:hover {
     color:#343a40;
 }
 
-#scrolloption {
-    transition-duration: 1s;
-    padding-left: 30px;
+#gitoption {
+    padding-right: 30px;
 }
 
-#scrolloption:hover {
-    color: #343a40;
+#scrolloption {
+    padding-left: 30px;
 }
 
 /* SKILLS */
 
 #skills {
-    /* background-color: #6BA4C7; */
     background-color: #90e0ef;
     min-height: 100vh;
     /* background-color:#87CEFA; */
@@ -215,7 +196,7 @@ body {
 
 .card {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     background-color: white;
 }
 
