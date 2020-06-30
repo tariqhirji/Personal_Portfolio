@@ -312,30 +312,41 @@ body {
 /* CONTACT  */
 
 #contact {
-    /* background-image: linear-gradient(to top, #b0e0e6, #7bd1ea, #40bff4, #00aafd, #1e90ff); */
-    background-image: linear-gradient(to bottom, #d2d2d2, #c5c9df, #abc3ec, #7ec0f8, #00bfff);
+    background-image: linear-gradient(to bottom, #d2d2d2, #7bd1ea, #40bff4, #00aafd, #1e90ff);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#contact-container {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
-#closing {
-    text-align: center;
-    font-size: 18px;
+.closer {
+    color: white;
 }
 
-#email-row, #linked-row, #github-row {
+.btnrow {
     text-align: center;
 }
-
 
 #contact button{
     border-radius: 0;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-top: 25px;
     margin-bottom: 20px;
     width: 250px;
     transition: 1.5s;
+}
+
+#contact button:hover {
+    transform: scale(1.20);
+}
+
+.blockquote {
+    width: fit-content;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 #contact i {
@@ -350,16 +361,6 @@ body {
 #linked-btn {
     background-color: #0077B5;
 }
-
-#contact button:hover {
-    transform: scale(1.20);
-}
-
-/* make col larger so footer will be at bottom */
-#github-col {
-    margin-bottom: 19vh;
-}
-
 
 /* Footer row */
 
